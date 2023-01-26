@@ -1,2 +1,2 @@
 ## PDF
-PDF repositories.
+PDF and EPUB repositories.
