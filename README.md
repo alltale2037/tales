@@ -1,2 +1,2 @@
-## PDF
+## tales
 PDF and EPUB repositories.
