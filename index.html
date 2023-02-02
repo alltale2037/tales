@@ -1,21 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
   <head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1″>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTGR5QC75B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTGR5QC75B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-HTGR5QC75B');
-</script>
-    <title>PDF/EPUB</title>
+    gtag('config', 'G-HTGR5QC75B');
+    </script>
+    <title>縦書き html/PDF/EPUB</title>
   </head>
   <body>
   <!--Hello, world!-->
-    <h1>PDF/EPUB 置き場</h1>
+    <h1>縦書き html/PDF/EPUB 置き場</h1>
     
-    PDF と EPUB の置き場です。主に自分用。
+    縦書き html、PDF、EPUB の置き場です。主に自分用。
     
     <h2>名義について</h2>
     <ul>
@@ -27,12 +30,13 @@
     <ul>
       <li> 内容紹介やネタバレ等の注意書きは <a href="https://www.pixiv.net/users/59321047">pixiv</a> のキャプション欄をご覧下さい。</li>
       <li> 公式とは一切関係ありません。</li>
-      <li> 書きたい物を書いているだけなので、合わない方はすみません。</li>
       <li> 完全に初心者なので、今は質よりも「とにかく書き上げる」ことを目標にしています（言い訳）。</li>
-      <li> たぶんほぼ誰も読んでないので、ネガティブなものでも反応あるとめちゃくちゃうれしいです。</li>
+      <li> たぶんほぼ誰も読んでないので、反応あると (たとえネガティブなものでも) めちゃくちゃうれしいです。</li>
     </ul>
     
     <h2>フォーマットについて</h2>
+
+    <h3>組版</h3>
     <ul>
      <li> 以下の環境で typeset しています。2022 年に <a href="https://tateditor.app/about">TATEditor</a> から試験的に乗り換えました。</li>
        <ul>
@@ -40,17 +44,25 @@
          <li> バージョン管理: GitHub (private repositories)</li>
          <li> CSS 組版: <a href="https://vivliostyle.org/ja/">vivliostyle CLI</a> + Chromium</li>
          <li> EPUB 化: <a href="https://sigil-ebook.com/sigil/">Sigil</a></li>
-         <li> 表紙作成：<a href="https://sscard.monokakitools.net/covermaker.html">かんたん表紙メーカー</a> (サイズが合っていません。すいません)</li>
+         <li> 表紙作成: <a href="https://sscard.monokakitools.net/covermaker.html">かんたん表紙メーカー</a> (サイズが合っていません。すいません)</li>
        </ul>
-     <li> PDF のサイズは四六判ですが、文字のスケールは文庫に近いため、印刷すると文字が大きすぎるかもしれません。電子的閲覧向けです。</li>
-     <li> EPUB は以下の環境で動作確認しています。Google Books、読書尚友および Kindle for iOS では正しく表示できません。個人的には honto と楽天 Kobo での見た目がお気に入りです。</li>
+    </ul> 
+
+    <h3>html</h3>
+    <ul>
+      <li>html は Firefox では縦中横が表示されません。</li>
+    </ul>
+
+    <h3>EPUB</h3>
+    <ul>
+     <li> EPUB は以下の環境で動作確認しています。Google Books、読書尚友および Kindle for iOS では正しく表示できません。</li>
        <ul>
          <li> ○ Apple Books (iOS, MacOS) </li>
          <li> ○ honto (iOS) </li>
          <li> ○ 楽天 Kobo (iOS, Android, MacOS) </li>
          <li> ○ BOOK☆WALKER (iOS、MacOS) </li>
          <li> ○ Kinoppy (iOS, Android, MacOS) </li>
-         <li> ✕ Kindle (iOS)：横書きになる、ルビが正しく表示されない </li>
+         <li> ✕ Kindle (iOS): 横書きになる、ルビが正しく表示されない </li>
          <li> ○ Kindle (Android) </li>
          <li> ○ Bibi (WebUI) </li>
          <li> ○ Sigli (MacOS) </li>
@@ -61,35 +73,35 @@
          <li> ✕ 読書尚友 (iOS): 空行、全角空白が無視される</li>
          <li> ✕ 読書尚友 Lite (Android): 空行が無視される。ダーシ、三点リーダ等の表示がおかしい</li>
        </ul>
-      <li> html は Firefox では縦中横が表示されません。</li>
-      <li> 組版欲を満たすことが目的なので読み手への配慮はありません。すみません。</li>
+      <li>個人的には honto と楽天 Kobo での見た目が好きです。</li>
     </ul>
-    
+
+    <h3>PDF</h3>
+    <ul>
+      <li>PDF のサイズは四六判ですが、文字のスケールは文庫に近いため、印刷すると文字が大きすぎるかもしれません。電子的閲覧向けです。</li>
+    </ul>
+
     <h2>一覧（随時更新）</h2>
     <ul>
-      <li> 2027年7月2日20時57分24秒 (2022/9/20) <br>
-        [<a href="https://www.pixiv.net/novel/show.php?id=18384195">pixiv</a>] 
-        [<a href="https://alltale2037.github.io/tales/html/2027wiz.html">html</a>] 
-        [<a href="https://alltale2037.github.io/tales/pdf/2027wiz.pdf">PDF</a>] 
-        [<a href="https://alltale2037.github.io/tales/epub/2027wiz.epub">EPUB</a>]
+      <li> 2027年7月2日20時57分24秒 (2022/9/20): <a href="https://www.pixiv.net/novel/show.php?id=18384195">説明 (pixiv)</a> <br>
+        <a href="https://alltale2037.github.io/tales/html/2027wiz.html">html</a> / 
+        <a href="https://alltale2037.github.io/tales/pdf/2027wiz.pdf">PDF</a> /
+        <a href="https://alltale2037.github.io/tales/epub/2027wiz.epub">EPUB</a>
         </li>
-      <li> アンサー (2022/10/10) <br>
-        [<a href="https://www.pixiv.net/novel/show.php?id=18507101">pixiv</a>] 
-        [<a href="https://alltale2037.github.io/tales/html/answer.html">html</a>] 
-        [<a href="https://alltale2037.github.io/tales/pdf/answer.pdf">PDF</a>] 
-        [<a href="https://alltale2037.github.io/tales/epub/answer.epub">EPUB</a>] 
+      <li> アンサー (2022/10/10): <a href="https://www.pixiv.net/novel/show.php?id=18507101">説明 (pixiv)</a> <br>
+        <a href="https://alltale2037.github.io/tales/html/answer.html">html</a> / 
+        <a href="https://alltale2037.github.io/tales/pdf/answer.pdf">PDF</a> /
+        <a href="https://alltale2037.github.io/tales/epub/answer.epub">EPUB</a> 
         </li>
-      <li> 一条さん (2023/1/2) <br>
-        [<a href="https://www.pixiv.net/novel/show.php?id=19026741">pixiv</a>] 
-        [<a href="https://alltale2037.github.io/tales/html/ichijo.html">html</a>] 
-        [<a href="https://alltale2037.github.io/tales/pdf/ichijo.pdf">PDF</a>] 
-        [<a href="https://alltale2037.github.io/tales/epub/ichijo.epub">EPUB</a>] 
+      <li> 一条さん (2023/1/2): <a href="https://www.pixiv.net/novel/show.php?id=19026741">説明 (pixiv)</a> <br>
+        <a href="https://alltale2037.github.io/tales/html/ichijo.html">html</a> / 
+        <a href="https://alltale2037.github.io/tales/pdf/ichijo.pdf">PDF</a> /
+        <a href="https://alltale2037.github.io/tales/epub/ichijo.epub">EPUB</a> 
         </li>
-      <li> ERROR (2023/1/23) <br>
-        [<a href="https://www.pixiv.net/novel/show.php?id=19156928">pixiv</a>] 
-        [<a href="https://alltale2037.github.io/tales/html/error.html">html</a>] 
-        [<a href="https://alltale2037.github.io/tales/pdf/error.pdf">PDF</a>] 
-        [<a href="https://alltale2037.github.io/tales/epub/error.epub">EPUB</a>] 
+      <li> ERROR (2023/1/23): <a href="https://www.pixiv.net/novel/show.php?id=19156928">説明 (pixiv)</a> <br>
+        <a href="https://alltale2037.github.io/tales/html/error.html">html</a> /
+        <a href="https://alltale2037.github.io/tales/pdf/error.pdf">PDF</a> /
+        <a href="https://alltale2037.github.io/tales/epub/error.epub">EPUB</a>
         </li>
       <li> ...
         </li>
