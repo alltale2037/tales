@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package unique-identifier="BookId" version="2.0" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:date opf:event="publication">2023-01-30</dc:date>
+    <dc:publisher>https://www.pixiv.net/users/59321047</dc:publisher>
+    <dc:creator opf:role="aut">a</dc:creator>
+    <dc:language>ja</dc:language>
+    <dc:title>エキセントリシティ</dc:title>
+    <meta content="1.9.20" name="Sigil version"/>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-09-19T04:02:48+09:00</dc:date>
+    <meta content="vertical-rl" name="primary-writing-mode"/>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:55d18362-3b7c-4f75-ab57-0fea64b67354</dc:identifier>
+    <meta content="cover.png" name="cover"/>
+  </metadata>
+  <manifest>
+    <item href="Text/Section0001.xhtml" id="Section0001.xhtml" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Styles/Style0001.css" id="Style0001.css" media-type="text/css"/>
+    <item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/cover.png" id="cover.png" media-type="image/png"/>
+  </manifest>
+  <spine page-progression-direction="rtl" toc="ncx">
+    <itemref idref="cover.xhtml"/>
+    <itemref idref="Section0001.xhtml"/>
+  </spine>
+  <guide>
+    <reference href="Text/cover.xhtml" title="表紙" type="cover"/>
+  </guide>
+</package>
