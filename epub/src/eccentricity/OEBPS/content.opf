@@ -7,9 +7,9 @@
     <dc:language>ja</dc:language>
     <dc:title>エキセントリシティ</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-09-22T01:58:33+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-09-25T03:51:01+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:6b21bc40-10f4-4f33-9d7c-cb20774855a1</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:fcbadf1d-3799-4e4f-9afd-2871c4fa9455</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
