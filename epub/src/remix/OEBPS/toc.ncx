@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
   <head>
-    <meta content="urn:uuid:cece471e-a5b6-4d5c-a990-d9675007bcd0" name="dtb:uid"/>
+    <meta content="urn:uuid:20ad8d0d-9628-40c2-9045-6fc8e0bc812b" name="dtb:uid"/>
     <meta content="0" name="dtb:depth"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
 <docTitle>
-  <text>こたえのかわりに曲をかける</text>
+  <text>こたえのかわりに、曲をかける</text>
 </docTitle>
 <navMap>
 <navPoint id="navPoint-1" playOrder="1">
   <navLabel>
-    <text>こたえのかわりに曲をかける</text>
+    <text>こたえのかわりに、曲をかける</text>
   </navLabel>
   <content src="Text/Section0001.xhtml"/>
 </navPoint>
