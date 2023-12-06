@@ -7,9 +7,9 @@
     <dc:language>ja</dc:language>
     <dc:title>こたえのかわりに、曲をかける</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-11-04T09:58:34+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-11-18T16:37:52+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:7b355c0b-3bc3-431a-8ea2-de0692978b2c</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:0ba80ac2-97f4-40e7-90c2-8fa7a90817d3</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
