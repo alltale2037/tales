@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
   <head>
-    <meta content="urn:uuid:45e1c0c4-76b3-40fc-9d26-16831d0b212d" name="dtb:uid"/>
+    <meta content="urn:uuid:5a83574b-2b12-4fd5-ab4c-3c9cecacf748" name="dtb:uid"/>
     <meta content="0" name="dtb:depth"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
 <docTitle>
-  <text>エキセントリシティ</text>
+  <text>今日くらいはさ</text>
 </docTitle>
 <navMap>
 <navPoint id="navPoint-1" playOrder="1">
   <navLabel>
-    <text>エキセントリシティ</text>
+    <text>今日くらいはさ</text>
   </navLabel>
   <content src="Text/Section0001.xhtml"/>
 </navPoint>

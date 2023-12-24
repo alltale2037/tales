@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>今日くらいはさ</title>
+
+      <style>
+      @charset "UTF-8";
+      html {
+      /* 組み方向 */
+      -epub-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  
+      orphans: 1;
+      widows: 1;
+      }
+  
+      * {
+      margin: 0;
+      padding: 0;
+      }
+  
+      @page {
+      size: 105mm 148mm; /* A6 */
+      width: calc(90mm + 0.2mm);
+      height: calc(140mm + 0.2mm);
+      margin-top: 6mm;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      /* 以下、マージンボックスに継承される */
+      font-size: 9pt;
+      font-family: "游明朝", "YuMincho", serif;
+      /* 本来不要（<span class="smaller"><span class="smaller">ルート要素の指定が継承される</span></span>）だが、現時点のvivliostyle.jsの制限により必要 */
+      vertical-align: top;
+      }
+  
+      @page :left {
+      margin-right: 7mm;
+      @top-left {
+          content: counter(page) "　　今日くらいはさ";
+          margin-left: 0mm;
+          margin-top: 140mm;
+          writing-mode: horizontal-tb;
+          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+      }
+      @page :right {
+      margin-right: 7mm;
+      /* border-bottom: 1pt solid black; */
+      /* 右下ノンブル */
+      @top-right {
+          content: " 今日くらいはさ　　"counter(page);
+          margin-right: 0mm;
+          margin-top: 140mm;
+          writing-mode: horizontal-tb;
+          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+      }
+  
+      html {
+      font-family: "游明朝", "YuMincho", serif;
+      font-weight: Medium;
+      text-align: justify;
+      }
+  
+      body{
+        
+      }
+  
+      div#draft{
+        margin: 5px;
+
+      }
+
+      h1 {
+      /* フォント */
+      font-weight: Extrabold;
+      /* フォントサイズ */
+      font-size: 24q;
+      /* 字下げ */
+      text-indent: 0;
+      /* 直後の改ページ・改段禁止 */
+      page-break-before: always;
+      page-break-after: always;
+      line-height: 42q;
+      letter-spacing: 0.25em;
+      display: flex;
+      align-items: center;
+      }
+  
+      h2 {
+      /* フォント */
+      font-weight: Demibold;
+      /* フォントサイズ */
+      font-size: 16q;
+      /* 字下げ */
+      text-indent: 3em;
+      /* 直後の改ページ・改段禁止 */
+      page-break-before: always;
+      page-break-after: avoid;
+      line-height: 42q;
+      margin-left: 2em;
+      }
+  
+      h2.part {
+      width: 80mm;
+      padding: 0mm 35mm;
+      font-weight: bold;
+      font-size: 16q;
+      page-break-before: always;
+      page-break-after: always;
+      margin-left: 4em;
+      }
+  
+      h1 + h2 {
+      margin-right: 16pt;
+      }
+  
+      ruby > rt {
+      font-size: 6.5q;
+      }
+  
+      p {
+        font-size: 9pt;
+        line-height: 1.75;
+        height: calc(10pt * 36 + 0.5mm);
+        text-indent: 0em;
+        hanging-punctuation: force-end;
+        line-break:strict;
+        page-break-inside: auto;
+      }
+
+    div.indent-1 p:first-of-type, div.indent-2 p:first-of-type, div.indent-3 p:first-of-type{
+      padding-block-start: calc( 3.5mm * 1.75);
+      }
+
+      div.indent-1 p:last-of-type, div.indent-2 p:last-of-type, div.indent-3 p:last-of-type{
+      padding-block-end: calc( 3.5mm * 1.75);
+      }
+
+    
+    div.indent-1 p{
+    height: calc( 110mm - (100vh * 0.025));
+    padding-top: calc( 3.5mm);
+    }
+
+    div.indent-2 p{
+    height: calc( 110mm - (100vh * 0.025 * 2));
+    padding-top: calc(3.5mm * 2);
+    }
+
+    div.indent-3 p{
+    height: calc( 110mm - (3.5mm * 3));
+    padding-top: calc(3.5mm * 3);
+    }
+
+    p.goth {
+    margin-top: 3em;
+    font-family: "游ゴシック", "YuGothic", san-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    }
+
+    p.align-rb {
+    text-align: right;
+    }
+
+    p.goth + p.goth {
+    margin-block-start: -1em;
+    }
+
+    div.codes {
+    display: inline-block;
+    margin: 3em 1em;
+    writing-mode: horizontal-tb;
+    padding: 1em;
+    font-family: "Courier", monospace;
+    font-size: 0.8em;
+    }
+  
+    div.codes p {
+    text-orientation: sideways;
+    }
+
+    p.star {
+    text-indent: 3em;
+    margin-right: 16pt;
+    margin-left: 16pt;
+    }
+
+    hr {
+    border: none;
+    border-right: 1pt solid black;
+    height: 6em;
+    margin: auto 8.5pt;
+    }
+
+    /* 縦中横 */
+    .tcy {
+    -webkit-text-combine: horizontal;
+    text-combine: horizontal;
+    -ms-text-combine-horizontal: all;
+    text-combine-horizontal: digit 2;
+    text-combine-upright: digit 2;
+    }
+
+    /* 圏点（<span class="smaller">ゴマ</span>） */
+    em.side-dot, em.sesame_dot {
+    font-style: normal;
+    -webkit-text-emphasis-style: sesame;
+    text-emphasis-style: sesame;
+    margin-right: -1em;
+    display: inline-block;
+    }
+
+    /*著作者*/
+    .author {
+    position: absolute;
+    bottom: 0;
+    font-size: 8.5pt;
+    margin-top: 50pt;
+    letter-spacing: normal;
+    }
+
+    /*画像＋キャプション*/
+    figure {
+    display: block;
+    width: 236pt;
+    -ms-writing-mode: lr-tb;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    }
+
+    figure img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    }
+
+    figcaption {
+    text-align: left;
+    font-size: 7pt;
+    }
+
+    /*奥付*/
+    .colophon {
+    font-size: 7pt;
+    margin-right: 48pt;
+    }
+    /* 級さげ */
+    span.smaller{
+        font-size:6.5pt
+    }
+  
+    div.comment {
+        display:none;
+    }
+
+    p.blank {
+        color:transparent;
+    }
+    </style>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTGR5QC75B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HTGR5QC75B');
+    </script>
+  </head>
+  <body>
+  <div id="draft">
+  <p id="l-0"></p><p id="l-1"></p><p id="l-2" class="blank"><br /></p><p id="l-3">　え。ちょっと。マジありえない。</p><p id="l-4">　いないじゃん！　カタガキくん、来てないじゃん！</p><p id="l-5">　わざわざ土曜に研究室に来たってんのに。絶対ここにいると思ってたのに。</p><p id="l-6">　ていうか、何なの、この部屋。なんでサーバラックにイルミネーションついてんの<span class='tcy'>!?</span>　なんで光学実験台にオーナメントが配置されてんの<span class='tcy'>!?</span>　今日って臨時のゼミじゃなかったの？</p><p id="l-7">「ほ〜ら、みんな。ローストチキン焼けたよ〜」</p><p id="l-8">「……<ruby>千<rt>せん</rt></ruby><ruby>古<rt>こ</rt></ruby>先生、お願いですから乾熱滅菌器で料理しないでください（ゴゴゴゴゴゴゴ）」</p><p id="l-9">　チキンの香ばしい匂いと共に、真っ赤なサンタ服に身を包んだ千古先生が奥の実験室から登場した。似合いすぎてる。悪夢かな。その後ろで、<ruby>徐<rt>シュー</rt></ruby>さんがいつもみたくマジギレカウントダウン中。同期の四回生や先輩達はすでに出来上がっちゃってる。てかなんで転がってる瓶がシャンメリーなの。</p><p id="l-10">　だいたいさあ、うちの研究室の人達、今日が何の日かわかってるわけ？</p><p id="l-11">　<span class='tcy'>12</span>月<span class="tcy">24</span>日だよ。<span class="tcy">24</span>日。しかも、土曜の午後。</p><p id="l-12">　そんな日にゼミとかありえないって思ったけど、研究室でクリパはもっとありえない。どんだけみんなぼっちなわけ<span class='tcy'>!?</span></p><p id="l-13" class="blank"><br /></p><p id="l-14">　——そう、今日はさすがに研究室に来てるかなって思ったんだよね。</p><p id="l-15">　だってさ、やっぱ。今日くらいは、さ。</p><p id="l-16">　会って、話とかしたいじゃん。</p><p id="l-17" class="blank"><br /></p><p id="l-18">　なのに、来てない。壁の名札は裏返ったままだ。</p><p id="l-19">「……てかさー、今日ってゼミじゃなかったっけ」</p><p id="l-20">　紙皿に割り箸で元はケーキだったらしい何かをつついてる同期の一人に、聞いてみる。</p><p id="l-21">「いやー、俺もそう思ってたけど、来たらこれだし」</p><p id="l-22">「ふーん。……てかカタガキくんとか来てなくない？」</p><p id="l-23">　なんとなく早口で。</p><p id="l-24">「あー。……まあ、わりといつも来てねーし」</p><p id="l-25">　それはそうなんだけどさ。もしかして、まーた倒れてたりしないでしょうね。それとも誰かと一緒に……いやいやいや、それはない。それは絶対ない。ない……はず。うん。</p><p id="l-26" class="blank"><br /></p><p id="l-27">　カタガキくんはいない。ゼミもない。そして今日は<span class="tcy">12</span>月<span class="tcy">24</span>日、土曜日だ。なんか、めっちゃバカみたいじゃん。</p><p id="l-28">　そうと決まったら、もうここに用はない。結局バッグも置かずコートも脱がずに、千古サンタがずだ袋から電子部品をみんなにばら撒いてる隙に、そっと研究室を退散する。滞在時間<span class="tcy">40</span>秒。どうせあと三ヶ月で卒業だし、千古研にそこまでの忠誠心はないかなあ。</p><p id="l-29" class="blank"><br /></p><p id="l-30">　　　＊　＊　＊</p><p id="l-31" class="blank"><br /></p><p id="l-32">　うん。そう。何はともあれ、ヤタにクリスマスプレゼントをあげないとねってことで。それが目的。<ruby>百<rt>ひゃく</rt></ruby><ruby>万<rt>まん</rt></ruby><ruby>遍<rt>べん</rt></ruby>のドラッグストアで、いつものフードよりちょっとお高いやつに、奮発しておもちゃもつけちゃった。前のは、もうヨレヨレだし。どうせカタガキくんのことだから、今日が何の日かも忘れてそうだもんね。だから代わりに、いい子にしてたヤタのサンタになってあげるんだ。ヤタの。それが目的。</p><p id="l-33" class="blank"><br /></p><p id="l-34">　そんで、まあ、せっかくだし？　コンビニでチキン二本とケーキ二つと。どうせろくなもの食べてなさそうだし？　さすがにケーキ持参した人間を追い返したりはしないだろうしさ。あ、病み上がりだから栄養のつくものも必要だよね。年末年始の食糧も。んで、勢いでつい、百均でサンタ帽、買っちゃった。千古先生のこと笑えないな。どうせならはっちゃけていきましょー。</p><p id="l-35" class="blank"><br /></p><p id="l-36">　ふふ。やば。なんかちょっと楽しくなってきちゃった。ゼミで会うよか全然いいじゃん。むしろめっちゃラッキーじゃん。</p><p id="l-37">　だってさ、やっぱ。今日くらいは、さ。</p><p id="l-38">　このくらいしたっていいよね。</p><p id="l-39" class="blank"><br /></p><p id="l-40">　　　＊　＊　＊</p><p id="l-41" class="blank"><br /></p><p id="l-42">　もうすっかり日が落ちた西の空を見ると、細い三日月が懸かってた。アパートの門の前からいつもの窓をそっと確認して、カーテン越しの灯りにちょっとほっとする。底冷えする廊下で、両手にはずっしり重いビニール袋、頭にはサンタ帽。</p><p id="l-43">　コンコン、とノックを二回。</p><p id="l-44">　少し待つ。</p><p id="l-45">　いち早く気づいたヤタの、にゃあ、という声が聴こえて、思わず頬がにんまりと緩む。ありがと、ヤタ。こんなささやかな幸せを味わわせてくれて。</p><p id="l-46">　でも。</p><p id="l-47">　うれしいけど、そうじゃないんだ。そのために来たんじゃない。</p><p id="l-48" class="blank"><br /></p><p id="l-49">　事情は知らないけど、いつもバカみたいに必死にベンキョして。この世に幸せなことなんて何もない、みたいな思い詰めた顔して。</p><p id="l-50">　それでもさ、やっぱ。今日くらいは、<span id="cursor">さ</span>。</p><p id="l-51">　カタガキくんに少しでも、ごく普通の幸せを味わってほしいんだ。</p><p id="l-52">　そのくらいしか、できることがないから。</p><p id="l-53">　ね、たまにはちょっとだけ、幸せになってみなよ、バーカ。</p><p id="l-54" class="blank"><br /></p><p id="l-55" class="blank"><br /></p><p id="l-56">　足音に続いて、がちゃりとドアが開く。驚いた顔がそこに立っている。</p><p id="l-57">　さ、テンション上げてくよ。</p><p id="l-58" class="blank"><br /></p><p id="l-59">「カタガキくんっ。やっほ。メリークリスマース！」</p><p id="l-60" class="blank"><br /></p><p id="l-61"><p style="text-align:right">（了）　　</p></p><p id="l-62" class="blank"><br /></p>
+  </div>
+  </body>
+  </html>

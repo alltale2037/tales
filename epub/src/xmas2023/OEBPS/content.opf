@@ -5,11 +5,11 @@
     <dc:publisher>https://www.pixiv.net/users/59321047</dc:publisher>
     <dc:creator opf:role="aut">a</dc:creator>
     <dc:language>ja</dc:language>
-    <dc:title>エキセントリシティ</dc:title>
+    <dc:title>今日くらいはさ</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-12-16T18:20:20+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-12-25T04:00:24+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:45e1c0c4-76b3-40fc-9d26-16831d0b212d</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:5a83574b-2b12-4fd5-ab4c-3c9cecacf748</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
