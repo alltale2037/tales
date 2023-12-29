@@ -7,9 +7,9 @@
     <dc:language>ja</dc:language>
     <dc:title>会話形式で内省記事を書いてみるテスト</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-12-22T16:53:11+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-12-29T15:31:14+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:5e6d5aa0-a996-4c88-8788-115f92458f07</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:6aef96a1-5ff1-4c18-915f-9d97fe75299a</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
