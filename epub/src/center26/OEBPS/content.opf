@@ -7,9 +7,9 @@
     <dc:language>ja</dc:language>
     <dc:title>アルタラセンター26時</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-03-23T18:07:16+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-03-26T23:16:00+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:eeaaddbc-a02e-4d37-aff5-801e7ee1d38f</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:21e5b06b-a724-4cdf-8608-dd7f8161ad28</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
