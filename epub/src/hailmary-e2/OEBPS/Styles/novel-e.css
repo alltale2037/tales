@@ -1,0 +1,181 @@
+/* This defines styles and classes used in the book */
+body { 
+	font-family: "Bookerly", "Charter", "Palatino", "Times New Roman", "Book Antiqua", "Palatino", "Georgia", serif; 
+}
+
+code { 
+	font-family: monospace; 
+}
+
+h1 { 
+	/*text-align: center; */
+	font-size: 2.2em;
+}
+
+h2 { 
+	/*text-align: center; */
+	font-size: 1.5em;
+}
+
+h3 { 
+	text-align: left; 
+}
+
+h4 { 
+	text-align: left; 
+}
+
+h5 { 
+	text-align: left; 
+}
+
+h6 { 
+	text-align: left; 
+}
+
+/* For title, author, and date on the cover page */
+h1.title { 
+	text-align: left; 
+	font-family: "OPTIEdgarBold-Extended", san-serif; 
+    font-size: 18px;
+    margin-bottom: 5ex;
+    margin-top: 5ex;
+    /*float: left;*/
+    /*line-height: 1;*/
+	color: #eeeeee;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+h2.title { 
+	text-align: left; 
+	font-family: "OPTIEdgarBold-Extended", san-serif; 
+    font-size: 18px;
+    margin-bottom: 5ex;
+    margin-top: 5ex;
+    /*float: left;*/
+    /*line-height: 1;*/
+	color: #eeeeee;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+p.subtitle { text-align: center; }
+p.author { 
+	text-align: center; 
+	text-indent: 0em;
+}
+
+div.rights {
+	text-indent: 0em;
+	page-break-before: always;
+}
+
+.rights p {
+	text-indent: inherit;
+	padding-bottom: 0.5em;
+}
+
+hr {
+	width: 0.5in;
+    border: 1px solid;	
+  }
+
+hr + p {
+	padding-top: 0.5em;
+}
+
+p + p {
+	text-indent: 0em;
+}
+
+p {
+	padding: 0;
+	padding-top: 0em;
+	padding-bottom: 0.3em;
+	margin: 0;
+	text-align: justify;
+    font-size: 14px;
+	hyphens: auto;
+}
+
+ol.toc {
+    list-style-type: none;
+	padding-right: 1em;
+}
+
+.hyphens-auto {
+}
+
+em, em em em, em em em em em { font-style: italic;}
+
+em em, em em em em { font-style: normal; }
+
+code{ white-space: pre-wrap; }
+
+q { quotes: "“" "”" "‘" "’"; }
+
+/* between lines */
+body { line-height: 100% }
+
+/* between p's */
+p { line-height: 125% } 
+
+@page {
+	size: 105mm 148mm; /* A6 */
+	/*width: calc(90mm + 0.2mm);*/
+	/*height: calc(130mm + 0.2mm);*/
+	margin-top: 6mm;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 9pt;
+	vertical-align: top;
+	}
+
+@page :left {
+	margin-right: 7mm;
+	margin-left: 7mm;
+	margin-top: 7mm;
+	margin-bottom: 12mm;
+	@bottom-center {
+		content: counter(page);
+		font-family: "Bookerly", "Charter", "Palatino", "Times New Roman", "Book Antiqua", "Palatino", "Georgia", serif; 
+	}
+}
+@page :right {
+	margin-right: 7mm;
+	margin-left: 7mm;
+	margin-top: 7mm;
+	margin-bottom: 12mm;
+/* border-bottom: 1pt solid black; */
+	@bottom-center {
+		content: counter(page);
+		font-family: "Bookerly", "Charter", "Palatino", "Times New Roman", "Book Antiqua", "Palatino", "Georgia", serif; 
+	}
+}
+
+.dropcap:first-letter {
+	font-family: "OPTIEdgarBold-Extended", san-serif; 
+    font-size: 50px;
+    margin-right: 5px;
+    margin-top: 0px;
+    float: left;
+    line-height: 1; /* required */
+	color: #999999;
+}
+
+/* prose pages */
+/* Fonts are set on the container and header in case a theme likes to override h1 styles. */
+ {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+ /*{font-family: 'EB Garamond', serif; margin-left: auto; margin-right: auto; max-width: 608px;}*/
+ /*    h1 {font-family: 'EB Garamond', serif;text-align:center !important;margin-bottom: 70px; margin-top: 70px;}*/
+    /* Justify makes the line spread to the full width. Wordpress makes this even nicer by using automatic line hyphenation. */
+     p {margin:0;text-align:justify}
+     p.space{min-height:1em;}
+     p + p {text-indent: 1.5ex;}
+    /* Use .pov where you want to put *** or another marker centred between sections. */
+     p.pov {text-align:center;}
+    /* Force the lines following a .pov or .space to be non-indented. .first enables you to force this on a specific line with no prior space */
+     p.first,  p.pov,  p.pov + p,  p.space + p {text-indent:0;}
+    /* h1 + p::first-letter {float: left;font-size: 62px;line-height: 2.8;margin-right: 4px;margin-top: 7px;}*/

@@ -1,9 +1,9 @@
       @charset "UTF-8";
       html {
       /* 組み方向 */
-      -epub-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+      -epub-writing-mode: horizontal-tb;
+      -ms-writing-mode: tb-lr;
+      writing-mode: horizontal-tb;
   
       orphans: 1;
       widows: 1;
@@ -37,11 +37,11 @@
       }
   
       body{
-      -webkit-writing-mode: vertical-rl;
+      -webkit-writing-mode: horizontal-tb;
       /* -epub-writing-mode: tb-rl; */
-      writing-mode: vertical-rl;
+      writing-mode: horizontal-tb;
       -webkit-text-orientation: mixed;
-      -epub-writing-mode: vertical-rl;
+      -epub-writing-mode: horizontal-tb;
       -epub-text-orientation: mixed;
       text-orientation: mixed;
       }
@@ -53,6 +53,7 @@
       h1 {
       /* フォント */
       font-weight: Extrabold;
+    	font-family: "OPTIEdgarBold-Extended", san-serif; 
       /* フォントサイズ */
       /*font-size: 24q;*/
       /* 字下げ */
@@ -63,21 +64,23 @@
       line-height: 42q;
       letter-spacing: 0.25em;
       display: flex;
-      align-items: center;
+      align-items: left;
       }
   
       h2 {
       /* フォント */
-      font-weight: Demibold;
+      font-weight: Extrabold;
+      font-family: "OPTIEdgarBold-Extended", san-serif; 
       /* フォントサイズ */
       /*font-size: 16q;*/
       /* 字下げ */
-      text-indent: 3em;
+      /*text-indent: 3em;*/
       /* 直後の改ページ・改段禁止 */
-      page-break-before: always;
+      page-break-before: avoid;
       page-break-after: avoid;
-      line-height: 42q;
-      margin-left: 2em;
+      /*line-height: 42q;*/
+      /*margin-left: 2em;*/
+      align-items: left;
       }
   
       h2.part {
@@ -88,6 +91,19 @@
       page-break-before: always;
       page-break-after: always;
       margin-left: 4em;
+      }
+
+      h2.title { 
+        text-align: left; 
+        font-family: "OPTIEdgarBold-Extended", san-serif; 
+          font-size: 18px;
+          margin-bottom: 5ex;
+          margin-top: 5ex;
+          /*float: left;*/
+          /*line-height: 1;*/
+        color: #eeeeee;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
       }
   
       h1 + h2 {

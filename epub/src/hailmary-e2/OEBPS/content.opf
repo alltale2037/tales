@@ -4,12 +4,12 @@
     <dc:date opf:event="publication">2023-01-30</dc:date>
     <dc:publisher>https://www.pixiv.net/users/59321047</dc:publisher>
     <dc:creator opf:role="aut">a</dc:creator>
-    <dc:language>ja</dc:language>
+    <dc:language>en</dc:language>
     <dc:title>Here Comes The Sun</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-06-01T21:11:45+09:00</dc:date>
-    <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:7b253727-ae21-4539-9231-bbdcb903ac0c</dc:identifier>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-06-02T16:29:46+09:00</dc:date>
+    <meta content="horizontal-tb" name="primary-writing-mode"/>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:5b21cc28-d562-40b7-8f64-84f12f73551c</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
@@ -19,7 +19,7 @@
     <item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml"/>
     <item href="Images/cover.png" id="cover.png" media-type="image/png"/>
   </manifest>
-  <spine page-progression-direction="rtl" toc="ncx">
+  <spine page-progression-direction="ltr" toc="ncx">
     <itemref idref="cover.xhtml"/>
     <itemref idref="Section0001.xhtml"/>
   </spine>
