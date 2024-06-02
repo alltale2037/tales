@@ -43,7 +43,7 @@ h1.title {
     /*float: left;*/
     /*line-height: 1;*/
 	color: #eeeeee;
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: black;
 }
 
@@ -119,7 +119,13 @@ q { quotes: "“" "”" "‘" "’"; }
 body { line-height: 100% }
 
 /* between p's */
-p { line-height: 125% } 
+p { 
+	line-height: 125%;
+} 
+
+p:first-of-type {
+	text-indent: 0;
+}
 
 @page {
 	size: 105mm 148mm; /* A6 */
@@ -157,12 +163,14 @@ p { line-height: 125% }
 
 .dropcap:first-letter {
 	font-family: "OPTIEdgarBold-Extended", san-serif; 
-    font-size: 50px;
-    margin-right: 5px;
-    margin-top: 0px;
+    font-size: 420%;
+    margin-right: 4px;
+    margin-top: 4px;
     float: left;
     line-height: 1; /* required */
 	color: #999999;
+	text-indent: 0;
+	display: inline-block;
 }
 
 /* prose pages */
@@ -177,5 +185,5 @@ p { line-height: 125% }
     /* Use .pov where you want to put *** or another marker centred between sections. */
      p.pov {text-align:center;}
     /* Force the lines following a .pov or .space to be non-indented. .first enables you to force this on a specific line with no prior space */
-     p.first,  p.pov,  p.pov + p,  p.space + p {text-indent:0;}
+    /* p.first,  p.pov,  p.pov + p,  p.space + p {text-indent:0;}*/
     /* h1 + p::first-letter {float: left;font-size: 62px;line-height: 2.8;margin-right: 4px;margin-top: 7px;}*/
