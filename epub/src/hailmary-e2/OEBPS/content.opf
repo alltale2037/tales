@@ -7,9 +7,9 @@
     <dc:language>en</dc:language>
     <dc:title>Here Comes The Sun</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-06-23T00:10:28+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-06-23T03:26:40+09:00</dc:date>
     <meta content="horizontal-tb" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:731d8ff1-915d-4fd5-804b-0dd766036d65</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:06a45a0e-d0b4-4a9a-8eb3-1c1da9d1119e</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>

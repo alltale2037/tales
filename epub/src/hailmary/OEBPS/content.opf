@@ -7,9 +7,9 @@
     <dc:language>ja</dc:language>
     <dc:title>ヒア・カムズ・ザ・サン</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-06-22T23:50:08+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-06-23T03:20:57+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:72979fe7-28c5-430b-bf98-35cd79ad7751</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:acc9cddc-6285-493b-bec0-87f858afac18</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
