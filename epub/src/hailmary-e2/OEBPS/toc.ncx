@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
   <head>
-    <meta content="urn:uuid:06a45a0e-d0b4-4a9a-8eb3-1c1da9d1119e" name="dtb:uid"/>
+    <meta content="urn:uuid:dd3169b6-4913-4234-b3a7-f20bcda6f7d5" name="dtb:uid"/>
     <meta content="0" name="dtb:depth"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
 <docTitle>
-  <text>Here Comes The Sun</text>
+  <text>Here Comes the Sun</text>
 </docTitle>
 <navMap>
 <navPoint id="navPoint-1" playOrder="1">
   <navLabel>
-    <text>Here Comes The Sun</text>
+    <text>Here Comes the Sun</text>
   </navLabel>
   <content src="Text/Section0001.xhtml"/>
 </navPoint>
