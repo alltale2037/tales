@@ -7,9 +7,9 @@
     <dc:language>ja</dc:language>
     <dc:title>アンサー</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2023-02-28T19:39:41+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-08-14T18:53:07+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:cc489f0a-c711-4774-a806-d1b5e9976cd1</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:ebde8818-ff55-4dc5-975b-b9ece5268b70</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>

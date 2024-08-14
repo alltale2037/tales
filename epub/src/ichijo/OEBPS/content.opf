@@ -7,9 +7,9 @@
     <dc:language>ja</dc:language>
     <dc:title>一条さん</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-01-24T09:24:05+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-08-14T18:51:15+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:118397f6-f126-487d-afd1-3bac744cfbcf</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:19e56c66-95f4-460a-8a6c-774bdd2102c4</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>

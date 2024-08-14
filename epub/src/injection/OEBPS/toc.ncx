@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="urn:uuid:62f654e8-64d8-4f4d-9382-0586cda85aa9" name="dtb:uid"/>
+    <meta content="0" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+<docTitle>
+  <text>ＩＮＪＥＣＴＩＯＮ</text>
+</docTitle>
+<navMap>
+<navPoint id="navPoint-1" playOrder="1">
+  <navLabel>
+    <text>ＩＮＪＥＣＴＩＯＮ</text>
+  </navLabel>
+  <content src="Text/Section0001.xhtml"/>
+</navPoint>
+</navMap>
+</ncx>
