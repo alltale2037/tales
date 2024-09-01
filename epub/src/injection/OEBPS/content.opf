@@ -5,11 +5,11 @@
     <dc:publisher>https://www.pixiv.net/users/59321047</dc:publisher>
     <dc:creator opf:role="aut">a</dc:creator>
     <dc:language>ja</dc:language>
-    <dc:title>ＩＮＪＥＣＴＩＯＮ</dc:title>
+    <dc:title>Ｒｅ：コード</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-08-11T20:05:51+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-08-31T23:36:29+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:62f654e8-64d8-4f4d-9382-0586cda85aa9</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:130efb36-4ee9-4687-a565-5106a1f67a9f</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
