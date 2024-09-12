@@ -5,11 +5,11 @@
     <dc:publisher>https://www.pixiv.net/users/59321047</dc:publisher>
     <dc:creator opf:role="aut">a</dc:creator>
     <dc:language>ja</dc:language>
-    <dc:title>ナツノヨノＲｅ：コード</dc:title>
+    <dc:title>ミッドサマーナイト・レコード</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-09-08T14:28:03+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-09-12T09:26:13+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:ce5947de-89de-4c4e-adfe-ae870481cc6e</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:d2397831-c96e-4461-b064-b3bbc01318c9</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>

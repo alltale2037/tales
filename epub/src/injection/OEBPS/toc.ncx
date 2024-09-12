@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
   <head>
-    <meta content="urn:uuid:ce5947de-89de-4c4e-adfe-ae870481cc6e" name="dtb:uid"/>
+    <meta content="urn:uuid:d2397831-c96e-4461-b064-b3bbc01318c9" name="dtb:uid"/>
     <meta content="0" name="dtb:depth"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
 <docTitle>
-  <text>ナツノヨノＲｅ：コード</text>
+  <text>ミッドサマーナイト・レコード</text>
 </docTitle>
 <navMap>
 <navPoint id="navPoint-1" playOrder="1">
   <navLabel>
-    <text>ナツノヨノＲｅ：コード</text>
+    <text>ミッドサマーナイト・レコード</text>
   </navLabel>
   <content src="Text/Section0001.xhtml"/>
 </navPoint>
