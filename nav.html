@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ハードコード：目次</title>
+
+      <style>
+     @charset "UTF-8";
+      html {
+      /* 組み方向 */
+      -epub-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  
+      orphans: 1;
+      widows: 1;
+      }
+      @page {
+      size: 105mm 148mm; /* A6 */
+      width: calc(9pt * 1.75 * 16 + 2mm);
+      height: calc(9pt * 40 + 0.5pt);
+      margin-top: 11mm;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      /* 以下、マージンボックスに継承される */
+      font-size: 6pt;
+      font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
+      /* 本来不要（<span class="smaller"><span class="smaller">ルート要素の指定が継承される</span></span>）だが、現時点のvivliostyle.jsの制限により必要 */
+      vertical-align: top;
+      }
+      @page :left {
+      margin-right: 7mm;
+      @top-left {
+          content: counter(page) "　　目次";
+          margin-left: 2mm;
+          margin-top: 4mm;
+          writing-mode: horizontal-tb;
+          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+      }
+      @page :right {
+      margin-left: 7mm;
+      /* border-bottom: 1pt solid black; */
+      /* 右下ノンブル */
+      @top-right {
+          content: "目次　　"counter(page);
+          margin-right: 2mm;
+          margin-top: 4mm;
+          writing-mode: horizontal-tb;
+          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+      }
+      html {
+      font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
+      font-weight: Medium;
+      text-align: justify;
+      font-size: 9pt;	
+      }
+
+    /* 縦中横 */
+    .tcy {
+    -webkit-text-combine: horizontal;
+    text-combine: horizontal;
+    -ms-text-combine-horizontal: all;
+    text-combine-horizontal: digit 2;
+    text-combine-upright: digit 2;
+    }
+
+  #toc li {
+  list-style: none;
+
+  ul {
+    padding-left: 1em;
+  }
+
+  a {
+    display: inline-flex;
+    width: 100%;
+    text-decoration: none;
+    color: currentColor;
+    align-items: baseline;
+
+    &::before {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      border-bottom: 1px dotted;
+      content: '';
+      order: 1;
+      flex: auto;
+    }
+
+    &::after {
+      text-align: right;
+      content: target-counter(attr(href), page);
+      align-self: flex-end;
+      flex: none;
+      order: 2;
+    }
+  }
+}
+</style>
+</head>
+<body>
+<nav role="doc-toc">
+<!-- <h1>ハードコード</h1>-->
+  <h2>目次</h2>
+    <ul>
+      <li><a href="html/2027wiz.html">二〇二七年七月二日二〇時五七分二四秒</a></li>
+      <li><a href="html/answer.html">アンサー</a></li>
+      <li><a href="html/ichijo.html">「一条」さん</a></li>
+      <li><a href="html/error.html">ＥＲＲＯＲ</a></li>
+      <li><a href="html/muffler.html">後ろ結び</a></li>
+      <li><a href="html/miu.html">クローゼットの鍵を開けてよ</a></li>
+      <li><a href="html/eccentricity.html">エキセントリシティ</a></li>
+      <li><a href="html/remix.html">こたえのかわりに、曲をかける</a></li>
+      <li><a href="html/xmas2023.html">今日くらいは</a></li>
+      <li><a href="html/chaban.html">会話形式で内省記事を書いてみるテスト</a></li>
+      <li><a href="html/center26.html">アルタラセンター<span class='tcy'>26</span>時</a></li>
+      <li><a href="html/hailmary.html">ヒア・カムズ・ザ・サン</a></li>
+      <li><a href="html/injection.html">ミッドサマーナイト・レコード</a></li>
+    </ul>
+</nav>
+</body>
+</html>

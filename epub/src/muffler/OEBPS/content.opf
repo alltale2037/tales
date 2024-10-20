@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <package unique-identifier="BookId" version="2.0" xmlns="http://www.idpf.org/2007/opf">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-    <dc:date opf:event="publication">2023-01-30</dc:date>
+    <dc:date opf:event="publication">2023-05-08T00:00:00+09:00</dc:date>
     <dc:publisher>https://www.pixiv.net/users/59321047</dc:publisher>
     <dc:creator opf:role="aut">a</dc:creator>
     <dc:language>ja</dc:language>
     <dc:title>後ろ結び</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-08-14T18:46:55+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-10-20T20:19:58+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:2a03de9d-21ab-4af7-8cd5-a714a6da8162</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:urn:uuid:2a03de9d-21ab-4af7-8cd5-a714a6da8162</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>

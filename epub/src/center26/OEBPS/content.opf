@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <package unique-identifier="BookId" version="2.0" xmlns="http://www.idpf.org/2007/opf">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-    <dc:date opf:event="publication">2023-01-30</dc:date>
+    <dc:date opf:event="publication">2024-03-24T00:00:00+09:00</dc:date>
     <dc:publisher>https://www.pixiv.net/users/59321047</dc:publisher>
     <dc:creator opf:role="aut">a</dc:creator>
     <dc:language>ja</dc:language>
     <dc:title>アルタラセンター26時</dc:title>
     <meta content="1.9.20" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-08-14T18:30:04+09:00</dc:date>
+    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2024-10-20T20:58:26+09:00</dc:date>
     <meta content="vertical-rl" name="primary-writing-mode"/>
-    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:fa512cec-ea0d-4722-9098-88a5e3b93886</dc:identifier>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:urn:uuid:fa512cec-ea0d-4722-9098-88a5e3b93886</dc:identifier>
     <meta content="cover.png" name="cover"/>
   </metadata>
   <manifest>
