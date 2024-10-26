@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* 電書協 EPUB3 ガイドに準拠 */
+@import "book-style.css";
+
+html {  
+  orphans: 1;
+  widows: 1;
+  text-align:justify;
+  margin: 0;
+  padding: 0;
+}
+
+/* 扉 */
+body.p-cover{
+  -webkit-writing-mode: horizontal-tb;
+  /* -epub-writing-mode: tb-rl; */
+  writing-mode: horizontal-tb;
+  -webkit-text-orientation: mixed;
+  -epub-writing-mode: horizontal-tb;
+  -epub-text-orientation: mixed;
+  text-orientation: mixed;
+}
+div.tobira {
+  margin-left: auto; 
+  margin-right: auto; 
+  -epub-writing-mode: vertical-rl; 
+  height: 100%;
+}	
+h1.title{
+  font-size:140%;
+  font-family: sans-serif-ja, sans-serif;
+  font-weight: normal;
+  text-align: center; 
+}
+p.tobiranote{
+  font-size:80%;
+  font-family: serif-ja, serif;
+  font-weight: normal;
+  text-align: right; 
+  margin-bottom:  2.00em;
+}
+
+/* 本文 */
+body.p-text {
+  font-family: serif-ja, serif;
+  font-weight: Medium;
+  text-align: justify;
+  -webkit-writing-mode: vertical-rl;
+  /* -epub-writing-mode: tb-rl; */
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+  -epub-writing-mode: vertical-rl;
+  -epub-text-orientation: mixed;
+  text-orientation: mixed;
+}
+
+/* エピグラフ */
+p.epigraph {
+  font-size: 80%;
+  text-align: right;
+}
+
+/* 奥付用（KADOKAWA EPUB制作仕様より） */
+.p-colophon {
+}
+.p-colophon .main {
+  margin:         0 auto 0 auto;
+  padding:        2em 1em 1em 1em;
+  max-width:      22em;
+  text-align:     left;
+  line-height:    1.6;
+}
+/* 作品名 */
+.p-colophon .book-title {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .book-title-before {
+  margin:         0;
+  padding:        0;
+  font-size:      0.85em;
+}
+.p-colophon .book-title-main {
+  margin:         0;
+  padding:        0;
+  font-size:      1.2em;
+}
+.p-colophon .book-title-after {
+  margin:         0;
+  padding:        0;
+  font-size:      0.85em;
+}
+/* 著者名 */
+.p-colophon .author {
+  margin:         0.6em 0 0.9em 0;
+  padding:        0 0 0.4em 0;
+  font-size:      0.9em;
+  border-bottom:  1px solid black;
+}
+/* レーベルロゴ部分 */
+.p-colophon .label {
+  margin:         0;
+  padding:        0 0 0.3em 0;
+  line-height:    1;
+}
+/* レーベルロゴ部分のロゴ画像 */
+.p-colophon .label-logo img {
+  height:         2em;
+}
+/* レーベルロゴ部分のレーベル名 */
+.p-colophon .label-name {
+  margin:         0;
+  padding:        0;
+  font-size:      0.75em;
+  font-family:    sans-serif-jp, sans-serif;
+}
+/* デジタル発行日 */
+.p-colophon .release-date {
+  margin:         0.2em 0 0 0;
+  padding:        0;
+  font-size:      0.8em;
+}
+/* (C)表記 */
+.p-colophon .copyright {
+  margin:         0.6em 0 0 0;
+  padding:        0;
+  font-size:      0.7em;
+  line-height:    1.0;
+}
+/* 制作底本情報 */
+.p-colophon .original-books {
+  margin:         1em 0 0 0;
+  padding:        0;
+  font-size:      0.7em;
+  line-height:    1.0;
+}
+.p-colophon .original-title {
+  margin:         0.5em 0 0 0;
+  padding:        0;
+}
+.p-colophon .original-first-edition {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .original-used-edition {
+  margin:         0;
+  padding:        0;
+}
+/* 発行者情報 */
+.p-colophon .publisher-data {
+  margin:         1em 0 0 0;
+  padding:        0;
+  font-size:      0.7em;
+  line-height:    1.0;
+}
+.p-colophon .publish-person {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .publish-company {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .publish-address {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .publish-phone-editorial {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .publish-phone {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .publish-reception {
+  margin:         0;
+  padding:        0;
+}
+.p-colophon .publish-url {
+  margin:         0.5em 0 0 0;
+  padding:        0;
+}
+.p-colophon .publish-logo-credit {
+  margin:         2em 0 0 0;
+  padding:        0;
+}
+/* 奥付中の断り書き */
+.p-colophon .kotowarigaki {
+  margin:         2em 0 0 0;
+  padding:        0;
+  font-size:      0.7em;
+  line-height:    1.0;
+}

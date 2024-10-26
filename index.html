@@ -192,10 +192,11 @@
          <li> 執筆 + html 化: VSCode + <a href="https://marketplace.visualstudio.com/items?itemName=TaiyoFujii.novel-writer">novel-writer</a></li>
          <li> バージョン管理: GitHub (private repositories)</li>
          <li> CSS 組版: <a href="https://vivliostyle.org/ja/">vivliostyle CLI</a> + Chromium</li>
-         <li> EPUB 化: <s><a href="https://sigil-ebook.com/sigil/">Sigil</a></s> → Ruby REXML</li>
+         <li> EPUB 化: <s><a href="https://sigil-ebook.com/sigil/">Sigil</a></s> → Ruby <s>REXML</s></li>
          <li> 表紙作成: <s><a href="https://sscard.monokakitools.net/covermaker.html">かんたん表紙メーカー</a> (サイズが合っていません。すいません)</s> → ImageMagick</li>
          <li> mobi 化: kindlegen</li>
        </ul>
+      <li>ダッシュについては、「—」（U+2014：EM DASH）や「―」（U+2015：HORIZONTAL BAR）を用いると環境によってはズレやアキが発生するため、組版時に「─」（U+2500：罫線）に置き換えています。</li>
     </ul> 
 
     <h3>html</h3>
@@ -218,6 +219,7 @@
 
     <h3>EPUB</h3>
     <ul>
+     <li> EPUB3 に準拠しました。電書協 EPUB3 制作ガイド 1.1.3 および KADOKAWA-EPUB 制作仕様 1.3.1 にできるだけ沿うようにしています。</li> 
      <li> EPUB は以下の環境で動作確認しています。Google Books、Kindle for iOS/Mac および読書尚友では正しく表示できません。</li>
        <ul>
          <li> ○ Apple Books (iOS, MacOS) </li>
@@ -232,12 +234,14 @@
          <li> ○ Sigli (MacOS) </li>
          <li> ○ Calibre (MacOS) </li>
          <li> ○ Vivliostyle Viewer (WebUI) </li>
-         <li> ○ Reasily (Android)</li>
-         <li> △ Adobe Digital Editions (MacOS): 横書きになる（EPUB のせいかも） </li>
+         <li> △ Reasily (Android): 図が一部はみ出る</li>
+         <li> △ Adobe Digital Editions (MacOS, Android): ページ送りがおかしい </li>
          <li> △ Thorium (MacOS): 時々表示が崩れる</li>
+         <li> △ Murasaki (MacOS): ページ単位での表示ができない</li>
          <li> ✕ ConTenDo ビューア: ルビ、ダーシなどが正しく表示されない</li>
-         <li> △ Google Books (Android): 縦中横が正しく表示されない、ダーシがセンタリングされていない</li>
-         <li> ✕ Google Books (WebUI): 2 ページ目以降が表示されない</li>
+         <li> △ Google Books (Android): 表紙が出ない。右揃えにならない</li>
+         <li> ○ Google Books (WebUI)</li>
+         <li> ○ Sony Reader (Android)</li>
          <li> △ Perfect Viewer (Android): フォントによっては一部の約物（全角「：」等）が横書きになる（Noto Serif 等）</li>
          <li> ✕ エア草紙 (MacOS): 行頭以外の全角空白が無視されることがある。二重山括弧が強制的にルビになってしまうことがある。ダブルミニュートが縦書きグリフを参照していない（横書きグリフを90度回転しただけ）。</li>
          <li> ✕ 読書尚友 (iOS): 空行、全角空白が無視される</li>

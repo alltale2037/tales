@@ -24,14 +24,14 @@
       /*margin-right: auto;*/
       /* 以下、マージンボックスに継承される */
       /*font-size: 10pt;*/
-      font-family: "游明朝", "YuMincho", serif;
+      font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
       /* 本来不要（<span class="smaller"><span class="smaller">ルート要素の指定が継承される</span></span>）だが、現時点のvivliostyle.jsの制限により必要 */
       vertical-align: top;
       }
   
   
       html {
-      font-family: "游明朝", "YuMincho", serif;
+      font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
       font-weight: Medium;
       text-align: justify;
       }
@@ -54,7 +54,7 @@
       /* フォント */
       font-weight: Extrabold;
       /* フォントサイズ */
-      /*font-size: 24q;*/
+      font-size: 16q;
       /* 字下げ */
       text-indent: 0;
       /* 直後の改ページ・改段禁止 */
@@ -237,4 +237,40 @@
     p.blank {
         color:transparent;
         visibility:hidden
+    }
+    p.small{
+      font-size: 6Q;
+      text-align: right;
+    }
+    .coverpage{
+      position: absolute;
+    /*  width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    .coverpage2{
+      position: absolute;
+    /*  width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    @page :nth(1) {
+    @top-right { content: none }
+    @top-left { content: none }
+    }
+    @page :nth(2) {
+    @top-right { content: none }
+    @top-left { content: none }
     }
