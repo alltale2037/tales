@@ -14,8 +14,8 @@
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 <!-- 作品名 -->
-<dc:title id="title">二〇二七年七月二日二〇時五七分二四秒</dc:title>
-<meta refines="#title" property="file-as">二〇二七年七月二日二〇時五七分二四秒</meta>
+<dc:title id="title">ＥＲＲＯＲ</dc:title>
+<meta refines="#title" property="file-as">ＥＲＲＯＲ</meta>
 
 <!-- 著者名 -->
 <dc:creator id="creator01">ａ</dc:creator>
@@ -31,11 +31,11 @@
 <dc:language>ja</dc:language>
 
 <!-- ファイルid -->
-<dc:identifier id="unique-id">urn:uuid:d5d18dc1-030b-40d9-8852-950346d77007</dc:identifier>
+<dc:identifier id="unique-id">urn:uuid:bedb7e7c-522f-42b5-841b-b23b0b5d3f80</dc:identifier>
 
 <!-- 更新日 -->
-<meta property="dcterms:modified">2024-10-26T18:00:38Z</meta>
-<meta property="dcterms:issued">2022-09-19T15:00:00Z</meta>
+<meta property="dcterms:modified">2024-10-26T17:55:49Z</meta>
+<meta property="dcterms:issued">2023-01-22T15:00:00Z</meta>
 
 <!-- Fixed-Layout Documents指定 -->
 <meta property="rendition:layout">reflowable</meta>
