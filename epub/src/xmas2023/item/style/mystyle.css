@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* 電書協 EPUB3 ガイドに準拠 */
+@import "book-style.css";
+
+html {  
+  orphans: 1;
+  widows: 1;
+  text-align:justify;
+  margin: 0;
+  padding: 0;
+}
+
+/* 扉 */
+body.p-cover{
+  -webkit-writing-mode: horizontal-tb;
+  /* -epub-writing-mode: tb-rl; */
+  writing-mode: horizontal-tb;
+  -webkit-text-orientation: mixed;
+  -epub-writing-mode: horizontal-tb;
+  -epub-text-orientation: mixed;
+  text-orientation: mixed;
+}
+div.tobira {
+  margin-left: auto; 
+  margin-right: auto; 
+  -epub-writing-mode: vertical-rl; 
+  height: 100%;
+}	
+h1.title{
+  font-size:140%;
+  font-family: sans-serif-ja, sans-serif;
+  font-weight: normal;
+  text-align: center; 
+}
+p.tobiranote{
+  font-size:80%;
+  font-family: serif-ja, serif;
+  font-weight: normal;
+  text-align: right; 
+  margin-bottom:  2.00em;
+}
+
+/* 本文 */
+body.p-text {
+  font-family: serif-ja, serif;
+  font-weight: Medium;
+  text-align: justify;
+  -webkit-writing-mode: vertical-rl;
+  /* -epub-writing-mode: tb-rl; */
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+  -epub-writing-mode: vertical-rl;
+  -epub-text-orientation: mixed;
+  text-orientation: mixed;
+}
+
+/* エピグラフ */
+p.epigraph-r {
+  font-size: 80%;
+  text-align: right;
+  margin-inline-end: 2em;
+}
+p.epigraph-l {
+  font-size: 80%;
+  text-align: left;
+  margin-inline-start: 2em;
+}

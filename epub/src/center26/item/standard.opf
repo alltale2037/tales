@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package
+ xmlns="http://www.idpf.org/2007/opf"
+ version="3.0"
+ xml:lang="ja"
+ unique-identifier="unique-id"
+ prefix="ebpaj: http://www.ebpaj.jp/
+         fixed-layout-jp: http://www.digital-comic.jp/
+         kadokawa: http://www.kadokawa.co.jp/
+         access: http://www.access-company.com/2012/layout#
+         ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/"
+>
+
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<!-- 作品名 -->
+<dc:title id="title">アルタラセンター26時</dc:title>
+<meta refines="#title" property="file-as">アルタラセンター26時</meta>
+
+<!-- 著者名 -->
+<dc:creator id="creator01">ａ</dc:creator>
+<meta refines="#creator01" property="role" scheme="marc:relators">aut</meta>
+<meta refines="#creator01" property="file-as">エー</meta>
+<meta refines="#creator01" property="display-seq">1</meta>
+
+<!-- 出版社名 -->
+<dc:publisher id="publisher">https://www.pixiv.net/users/59321047</dc:publisher>
+<meta refines="#publisher" property="file-as">ピクシブ</meta>
+
+<!-- 言語 -->
+<dc:language>ja</dc:language>
+
+<!-- ファイルid -->
+<dc:identifier id="unique-id">urn:uuid:e69fbd5b-1596-4084-a4c0-9f896cb713f3</dc:identifier>
+
+<!-- 更新日 -->
+<meta property="dcterms:modified">2024-10-26T18:43:36Z</meta>
+<meta property="dcterms:issued">2024-03-23T15:00:00Z</meta>
+
+<!-- Fixed-Layout Documents指定 -->
+<meta property="rendition:layout">reflowable</meta>
+<meta property="rendition:orientation">auto</meta>
+<meta property="rendition:spread">auto</meta>
+
+<!-- etc. -->
+<meta property="ebpaj:guide-version">1.1.3</meta>
+<meta property="kadokawa:version">1.1.3</meta>
+<meta property="kadokawa:reflow">1.0.1</meta>
+<meta property="ibooks:specified-fonts">true</meta>
+
+</metadata>
+<manifest>
+
+<!-- navigation -->
+<item media-type="application/xhtml+xml" id="toc" href="navigation-documents.xhtml" properties="nav"/>
+
+<!-- style -->
+<item media-type="text/css" id="fixed-layout-jp" href="style/fixed-layout-jp.css"/>
+<item media-type="text/css" id="book-style"      href="style/book-style.css"/>
+<item media-type="text/css" id="style-reset"     href="style/style-reset.css"/>
+<item media-type="text/css" id="style-standard"  href="style/style-standard.css"/>
+<item media-type="text/css" id="style-advance"   href="style/style-advance.css"/>
+<item media-type="text/css" id="style-check"     href="style/style-check.css"/>
+<item media-type="text/css" id="style-karc"      href="style/style-karc.css"/>
+<item media-type="text/css" id="style-kadokawa"  href="style/style-kadokawa.css"/>
+<item media-type="text/css" id="mystyle"         href="style/mystyle.css"/>
+
+<!-- image -->
+<item media-type="image/jpeg" id="cover"           href="image/cover.jpg" properties="cover-image"/>
+
+<!-- xhtml -->
+<item media-type="application/xhtml+xml" id="p-cover"           href="xhtml/p-cover.xhtml" properties="svg"/>
+<item media-type="application/xhtml+xml" id="tobira"            href="xhtml/tobira.xhtml"/>
+<item media-type="application/xhtml+xml" id="tobira2"           href="xhtml/tobira2.xhtml"/>
+<item media-type="application/xhtml+xml" id="text"              href="xhtml/text.xhtml"/>
+<item media-type="application/xhtml+xml" id="colophon"          href="xhtml/colophon.xhtml"/>
+</manifest>
+
+<spine page-progression-direction="rtl">
+
+<itemref linear="yes" idref="p-cover"           properties="rendition:layout-pre-paginated rendition:spread-none rendition:page-spread-center"/>
+<itemref linear="yes" idref="tobira"            properties="page-spread-left"/>
+<itemref linear="yes" idref="tobira2"           properties="page-spread-right"/>
+<itemref linear="yes" idref="text"/>
+<itemref linear="yes" idref="colophon"/>
+
+</spine>
+
+</package>
