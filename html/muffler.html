@@ -1,97 +1,95 @@
 <!DOCTYPE html>
-  <html lang="ja">
+<html lang="ja">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>後ろ結び</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後ろ結び</title>
 
-      <style>
-      @charset "UTF-8";
-      html {
+    <style>
+    @charset "UTF-8";
+    html {
       /* 組み方向 */
       -epub-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
-  
       orphans: 1;
       widows: 1;
-      }
-  
-      * {
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      }
-  
-      @page {
+    }
+
+    @page {
       size: 105mm 148mm; /* A6 */
-      width: calc(9pt * 1.75 * 16 + 2mm);
-      height: calc(9pt * 40 + 0.5pt);
+      width: calc(13Q * 1.75 * 16 + 6.5Q);
+      height: calc(13Q * 40);
       margin-top: 11mm;
       margin-bottom: auto;
       margin-left: auto;
       margin-right: auto;
       /* 以下、マージンボックスに継承される */
-      font-size: 6pt;
+      font-size: 10Q;
       font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
       /* 本来不要（<span class="smaller"><span class="smaller">ルート要素の指定が継承される</span></span>）だが、現時点のvivliostyle.jsの制限により必要 */
       vertical-align: top;
-      }
-  
-      @page :left {
-      margin-right: 7mm;
+    }  
+    @page :left {
+      /*margin-right: 7mm;*/
       @top-left {
-          content: counter(page) "　　後ろ結び";
-          margin-left: 2mm;
-          margin-top: 4mm;
-          writing-mode: horizontal-tb;
-          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+        content: counter(page) "　　後ろ結び";
+        margin-left: 2mm;
+        margin-top: 4mm;
+        writing-mode: horizontal-tb;
+        /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
       }
-      }
-      @page :right {
-      margin-left: 7mm;
+    }
+    @page :right {
+      /*margin-left: 7mm;*/
       /* border-bottom: 1pt solid black; */
       /* 右下ノンブル */
       @top-right {
-          content: " 後ろ結び　　"counter(page);
-          margin-right: 2mm;
-          margin-top: 4mm;
-          writing-mode: horizontal-tb;
-          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+        content: "後ろ結び　　"counter(page);
+        margin-right: 2mm;
+        margin-top: 4mm;
+        writing-mode: horizontal-tb;
+        /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
       }
-      }
-  
-      html {
+    }
+
+    html {
       font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
       font-weight: Medium;
       text-align: justify;
-      }
-  
-      body{
-        
-      }
-  
-      div#draft{
-        margin: 5px;
+    }
 
-      }
+    body{        
+    }
 
-      h1 {
+    div#draft{
+      margin: 5px;
+    }
+
+    h1 {
       /* フォント */
       font-weight: Extrabold;
       /* フォントサイズ */
-      font-size: 24q;
+      font-size: 16q;
       /* 字下げ */
       text-indent: 0;
       /* 直後の改ページ・改段禁止 */
       page-break-before: always;
       page-break-after: always;
+      break-after: page;
       line-height: 42q;
       letter-spacing: 0.25em;
       display: flex;
       align-items: center;
-      }
-  
-      h2 {
+      page-break-before: left;
+    }
+
+    h2 {
       /* フォント */
       font-weight: Demibold;
       /* フォントサイズ */
@@ -103,9 +101,9 @@
       page-break-after: avoid;
       line-height: 42q;
       margin-left: 2em;
-      }
-  
-      h2.part {
+    }
+
+    h2.part {
       width: 80mm;
       padding: 0mm 35mm;
       font-weight: bold;
@@ -113,158 +111,224 @@
       page-break-before: always;
       page-break-after: always;
       margin-left: 4em;
-      }
-  
-      h1 + h2 {
+    }
+
+    h1 + h2 {
       margin-right: 16pt;
-      }
-  
-      ruby > rt {
+    }
+
+    ruby > rt {
       font-size: 50%;
-      }
-  
-      p {
-        font-size: 9pt;
-        line-height: 1.75;
-        height: calc(9pt * 40 + 0.5pt);
-        text-indent: 0em;
-        hanging-punctuation: force-end;
-        line-break:strict;
-        page-break-inside: auto;
-      }
+    }
+
+    p {
+      font-size: 13Q;
+      line-height: 1.75;
+      height: calc(13Q * 40);
+      text-indent: 0em;
+      hanging-punctuation: force-end;
+      line-break:strict;
+      page-break-inside: auto;
+    }
 
     div.indent-1 p:first-of-type, div.indent-2 p:first-of-type, div.indent-3 p:first-of-type{
       padding-block-start: calc( 3.5mm * 1.75);
-      }
+    }
 
-      div.indent-1 p:last-of-type, div.indent-2 p:last-of-type, div.indent-3 p:last-of-type{
+    div.indent-1 p:last-of-type, div.indent-2 p:last-of-type, div.indent-3 p:last-of-type{
       padding-block-end: calc( 3.5mm * 1.75);
-      }
-
-    
+    }
+  
     div.indent-1 p{
-    height: calc( 110mm - (100vh * 0.025));
-    padding-top: calc( 3.5mm);
+      height: calc( 110mm - (100vh * 0.025));
+      padding-top: calc( 3.5mm);
     }
 
     div.indent-2 p{
-    height: calc( 110mm - (100vh * 0.025 * 2));
-    padding-top: calc(3.5mm * 2);
+      height: calc( 110mm - (100vh * 0.025 * 2));
+      padding-top: calc(3.5mm * 2);
     }
 
     div.indent-3 p{
-    height: calc( 110mm - (3.5mm * 3));
-    padding-top: calc(3.5mm * 3);
+      height: calc( 110mm - (3.5mm * 3));
+      padding-top: calc(3.5mm * 3);
     }
 
     p.goth {
-    margin-top: 3em;
-    font-family: "游ゴシック", "YuGothic", san-serif;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+      margin-top: 3em;
+      font-family: "游ゴシック", "YuGothic", san-serif;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
     }
 
     p.align-rb {
-    text-align: right;
+      text-align: right;
     }
 
     p.goth + p.goth {
-    margin-block-start: -1em;
+      margin-block-start: -1em;
     }
 
     div.codes {
-    display: inline-block;
-    margin: 3em 1em;
-    writing-mode: horizontal-tb;
-    padding: 1em;
-    font-family: "Courier", monospace;
-    font-size: 0.8em;
+      display: inline-block;
+      margin: 3em 1em;
+      writing-mode: horizontal-tb;
+      padding: 1em;
+      font-family: "Courier", monospace;
+      font-size: 0.8em;
     }
   
     div.codes p {
-    text-orientation: sideways;
+      text-orientation: sideways;
     }
 
     p.star {
-    text-indent: 3em;
-    margin-right: 16pt;
-    margin-left: 16pt;
+      text-indent: 3em;
+      margin-right: 16pt;
+      margin-left: 16pt;
     }
 
     hr {
-    border: none;
-    border-right: 1pt solid black;
-    height: 6em;
-    margin: auto 8.5pt;
+      border: none;
+      border-right: 1pt solid black;
+      height: 6em;
+      margin: auto 8.5pt;
     }
 
     /* 縦中横 */
     .tcy {
-    -webkit-text-combine: horizontal;
-    text-combine: horizontal;
-    -ms-text-combine-horizontal: all;
-    text-combine-horizontal: digit 2;
-    text-combine-upright: digit 2;
+      -webkit-text-combine: horizontal;
+      text-combine: horizontal;
+      -ms-text-combine-horizontal: all;
+      text-combine-horizontal: digit 2;
+      text-combine-upright: digit 2;
     }
 
     /* 圏点（<span class="smaller">ゴマ</span>） */
     em.side-dot, em.sesame_dot {
-    font-style: normal;
-    -webkit-text-emphasis-style: sesame;
-    text-emphasis-style: sesame;
-    margin-right: -1em;
-    display: inline-block;
+      font-style: normal;
+      -webkit-text-emphasis-style: sesame;
+      text-emphasis-style: sesame;
+      margin-right: -1em;
+      display: inline-block;
     }
 
     /*著作者*/
     .author {
-    position: absolute;
-    bottom: 0;
-    font-size: 8.5pt;
-    margin-top: 50pt;
-    letter-spacing: normal;
+      position: absolute;
+      bottom: 0;
+      font-size: 8.5pt;
+      margin-top: 50pt;
+      letter-spacing: normal;
     }
 
     /*画像＋キャプション*/
     figure {
-    display: block;
-    width: 236pt;
-    -ms-writing-mode: lr-tb;
-    -webkit-writing-mode: horizontal-tb;
-    writing-mode: horizontal-tb;
-    }
+      display: block;
+      width: 236pt;
+      -ms-writing-mode: lr-tb;
+      -webkit-writing-mode: horizontal-tb;
+      writing-mode: horizontal-tb;
+      }
 
     figure img {
-    width: 100%;
-    height: auto;
-    vertical-align: bottom;
+      width: 100%;
+      height: auto;
+      vertical-align: bottom;
     }
 
     figcaption {
-    text-align: left;
-    font-size: 7pt;
+      text-align: left;
+      font-size: 7pt;
     }
 
     /*奥付*/
-    .colophon {
-    font-size: 7pt;
-    margin-right: 48pt;
-    }
+    /*.colophon {
+      font-size: 7pt;
+      margin-right: 48pt;
+    }*/
     /* 級さげ */
     span.smaller{
-        font-size:6.5pt
+      font-size:9Q;
     }
   
     div.comment {
-        display:none;
+      display:none;
     }
 
     p.blank {
-        color:transparent;
+      color:transparent;
     }
-    </style>
+    p.small{
+      font-size: 10Q;
+    }
+    .coverpage{
+      position: absolute;
+      width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    .coverpage2{
+      position: absolute;
+      width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    @page :nth(1) {
+      @top-right { content: none }
+      @top-left { content: none }
+    }
+    @page :nth(2) {
+      @top-right { content: none }
+      @top-left { content: none }
+      }
+    h1.title{
+      font-size:100%;
+      font-family: sans-serif-ja, sans-serif;
+      font-weight: normal;
+      text-align: center; 
+    }
+    p.tobiranote{
+      font-size: 10Q;
+      font-family: serif-ja, serif;
+      font-weight: normal;
+      text-align: right; 
+      margin-inline-end: 2.00em;
+    }
+    .epigraph-r {
+      font-size: 10Q;
+      text-align: right;
+      margin-inline-end: 2em;
+    }
+    .epigraph-l {
+      font-size: 10Q;
+      text-align: left;
+      margin-inline-start: 2em;
+    }    
+    .fin {
+      text-align: right;
+      margin-inline-end: 2em;
+    }
+    div.colophon{
+      margin-inline-start: 8em;
+      page-break-before: always;
+    }
+    img, svg { max-inline-size: 100%; max-block-size: 100vb; object-fit: scale-down; }
 
-    
+    </style>
+  
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTGR5QC75B"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -275,8 +339,33 @@
     </script>
   </head>
   <body>
-  <div id="draft">
-  <p id="l-0"></p><p id="l-1"></p><p id="l-2"></p><p id="l-3">　　　後ろ結び</p><p id="l-4" class="blank"><br /></p><p id="l-5">　冬の朝は結構好きだ。</p><p id="l-6">　まぁ、<ruby>宮崎<rt>ここ</rt></ruby>の冬は寒いといっても知れたもので、今朝もＴＶの天気予報を見ながら、東京はこっちよりずいぶん寒いんだな、<ruby>草<rt>そう</rt></ruby><ruby>太<rt>た</rt></ruby>さん大丈夫かな、なんて思ったりもしたけど、でもそんな温暖な私の町でもこの季節の朝の空気は凜としていて、受験生としてもちょっぴり身が引き締まる。</p><p id="l-7">　玄関先で靴を履きながら、制服の上にマフラーをぐるぐるっと巻いて、首の後ろできゅっと結ぶ。</p><p id="l-8">　高二の頃とか、<ruby>絢<rt>あや</rt></ruby>たちといろんな巻き方を試してみたりもしたんだけど、結局はこの巻き方に戻ってきちゃうんだよね。</p><p id="l-9" class="blank"><br /></p><p id="l-10">　　　＊　＊　＊</p><p id="l-11" class="blank"><br /></p><p id="l-12"><span style="letter-spacing: -0.2em;">―</span>―すずめ、ほうら。おいで。</p><p id="l-13" class="blank"><br /></p><p id="l-14">　かすかに思い出す、遠い遠い昔の声。</p><p id="l-15" class="blank"><br /></p><p id="l-16"><span style="letter-spacing: -0.2em;">―</span>―今日はしばれるから、ちゃあんとマフラーするべ。ね。</p><p id="l-17" class="blank"><br /></p><p id="l-18">　そう言いながらお母さんはいつもちょっとしゃがみ込んで、私にマフラーをぐるぐるっと巻いて、首の後ろできゅっと結んでくれた。私の大好きな黄色。これを巻くともこもこになって、どんなに寒い日でも無敵になった気がした。</p><p id="l-19" class="blank"><br /></p><p id="l-20">　　　＊　＊　＊</p><p id="l-21" class="blank"><br /></p><p id="l-22">　あの日のことはよく覚えていない。ただ、すごくゆきがふってきて、はやくおかあさんをさがしにいかなきゃって思って、いつもみたいにマフラーをくびのうしろでむすぼうとしたけど、どうしてもおかあさんみたいにうまくむすべなくって、へんなむすびかたになっちゃったのは覚えてる。いつもはどんなすごいゆきのひでもへっちゃらだったのに、なんかきょうはそとにでるのがこわい。むすびかたがいつもとちがうからなのかな。</p><p id="l-23" class="blank"><br /></p><p id="l-24">　　　＊　＊　＊</p><p id="l-25" class="blank"><br /></p><p id="l-26">　ずっと忘れてたけど、今ならば、わかる。あの日、お母さんみたいに私にマフラーをぐるぐるっと巻いて、首の後ろできゅっと結んでくれた人がいた。そしたらなんだか、ちょっとだけ、こわくなくなったんだ。</p><p id="l-27" class="blank"><br /></p><p id="l-28">　　　＊　＊　＊</p><p id="l-29" class="blank"><br /></p><p id="l-30">　だから私は今日もこうやって、ちゃあんとマフラーを巻く。今の私は、後ろ結びなんて秒でできる。何しろもうね、包帯法だって完璧なんだよ。ピンクのマフラーをぐるぐるっと巻いて、首の後ろできゅっと結ぶと、やっぱり無敵になった気がする。将来が不安になる夜もあるけど、毎朝この儀式をすると、なんだか、未来なんて怖くないって思えてくる。この瞬間が好きだから、冬の朝が好きなんだ。</p><p id="l-31">「行ってきます！」</p><p id="l-32">　玄関のドアを開ける。冷たい空気が頬を刺すけど、きゅっと結んだマフラーがあればへっちゃらだ。裏庭のスズメのさえずりに交じって遠くの漁港の喧噪がこの高台にもかすかに届いて、なんていうか、今日も世界が動き出してるって感じがする。リュックに詰めた<ruby>環<rt>たまき</rt></ruby>さんのお弁当も、あと何回食べれるかなって思うと、最近ちょっとね、いとおしいんだ。</p><p id="l-33">　サドルにまたがって、ぐいっとペダルを漕ぎ出す。そのまま加速する。カーブを曲がると視界が一気に開けて、キラキラした海の青が一面に広がる。首の後ろでマフラーが潮風にはためいてるのがわかる。自転車は無敵の私を乗せて、見事な冬晴れの坂道を走り続けてゆく。光の中をずっとずっと、もっと先まで。私、きっと行けるよね？</p><p id="l-34" class="blank"><br /></p><p id="l-35"><p style="text-align:right">（了）　　</p><span id="cursor"></span></p>
-  </div>
+  <!--  <div class="coverpage">-->
+      <h1 class="title">後ろ結び</h1>
+  <!--  </div>-->
+  <!--  <div class="coverpage2">-->
+      <p class="tobiranote">本作品は映画『すずめの戸締まり』の二次創作です。</p>
+  <!--  </div>-->
+    <div id="draft">
+      <p id="l-0"></p><p id="l-1"></p><p id="l-2"></p><p id="l-3"></p><p id="l-4" class="blank"><br /></p><p id="l-5" class="blank"><br /></p><p id="l-6" class="blank"><br /></p><p id="l-7" class="blank"><br /></p><p id="l-8"><span id="cursor">　</span></p><p id="l-9">　冬の朝は結構好きだ。</p><p id="l-10">　まぁ、<ruby>宮崎<rt>ここ</rt></ruby>の冬は寒いといっても知れたもので、今朝もＴＶの天気予報を見ながら、東京はこっちよりずいぶん寒いんだな、<ruby>草<rt>そう</rt></ruby><ruby>太<rt>た</rt></ruby>さん大丈夫かな、なんて思ったりもしたけど、でもそんな温暖な私の町でもこの季節の朝の空気は凜としていて、受験生としてもちょっぴり身が引き締まる。</p><p id="l-11">　玄関先で靴を履きながら、制服の上にマフラーをぐるぐるっと巻いて、首の後ろできゅっと結ぶ。</p><p id="l-12">　高二の頃とか、<ruby>絢<rt>あや</rt></ruby>たちといろんな巻き方を試してみたりもしたんだけど、結局はこの巻き方に戻ってきちゃうんだよね。</p><p id="l-13" class="blank"><br /></p><p id="l-14">　　　＊　＊　＊</p><p id="l-15" class="blank"><br /></p><p id="l-16">──すずめ、ほうら。おいで。</p><p id="l-17" class="blank"><br /></p><p id="l-18">　かすかに思い出す、遠い遠い昔の声。</p><p id="l-19" class="blank"><br /></p><p id="l-20">──今日はしばれるから、ちゃあんとマフラーするべ。ね。</p><p id="l-21" class="blank"><br /></p><p id="l-22">　そう言いながらお母さんはいつもちょっとしゃがみ込んで、私にマフラーをぐるぐるっと巻いて、首の後ろできゅっと結んでくれた。私の大好きな黄色。これを巻くともこもこになって、どんなに寒い日でも無敵になった気がした。</p><p id="l-23" class="blank"><br /></p><p id="l-24">　　　＊　＊　＊</p><p id="l-25" class="blank"><br /></p><p id="l-26">　あの日のことはよく覚えていない。ただ、すごくゆきがふってきて、はやくおかあさんをさがしにいかなきゃって思って、いつもみたいにマフラーをくびのうしろでむすぼうとしたけど、どうしてもおかあさんみたいにうまくむすべなくって、へんなむすびかたになっちゃったのは覚えてる。いつもはどんなすごいゆきのひでもへっちゃらだったのに、なんかきょうはそとにでるのがこわい。むすびかたがいつもとちがうからなのかな。</p><p id="l-27" class="blank"><br /></p><p id="l-28">　　　＊　＊　＊</p><p id="l-29" class="blank"><br /></p><p id="l-30">　ずっと忘れてたけど、今ならば、わかる。あの日、お母さんみたいに私にマフラーをぐるぐるっと巻いて、首の後ろできゅっと結んでくれた人がいた。そしたらなんだか、ちょっとだけ、こわくなくなったんだ。</p><p id="l-31" class="blank"><br /></p><p id="l-32">　　　＊　＊　＊</p><p id="l-33" class="blank"><br /></p><p id="l-34">　だから私は今日もこうやって、ちゃあんとマフラーを巻く。今の私は、後ろ結びなんて秒でできる。何しろもうね、包帯法だって完璧なんだよ。ピンクのマフラーをぐるぐるっと巻いて、首の後ろできゅっと結ぶと、やっぱり無敵になった気がする。将来が不安になる夜もあるけど、毎朝この儀式をすると、なんだか、未来なんて怖くないって思えてくる。この瞬間が好きだから、冬の朝が好きなんだ。</p><p id="l-35">「行ってきます！」</p><p id="l-36">　玄関のドアを開ける。冷たい空気が頬を刺すけど、きゅっと結んだマフラーがあればへっちゃらだ。裏庭のスズメのさえずりに交じって遠くの漁港の喧噪がこの高台にもかすかに届いて、なんていうか、今日も世界が動き出してるって感じがする。リュックに詰めた<ruby>環<rt>たまき</rt></ruby>さんのお弁当も、あと何回食べれるかなって思うと、最近ちょっとね、いとおしいんだ。</p><p id="l-37">　サドルにまたがって、ぐいっとペダルを漕ぎ出す。そのまま加速する。カーブを曲がると視界が一気に開けて、キラキラした海の青が一面に広がる。首の後ろでマフラーが潮風にはためいてるのがわかる。自転車は無敵の私を乗せて、見事な冬晴れの坂道を走り続けてゆく。光の中をずっとずっと、もっと先まで。私、きっと行けるよね？</p><p id="l-38" class="blank"><br /></p><p id="l-39"><p style="text-align:right">（了）　　</p></p>
+
+    </div>
+
+    <div class="colophon">
+      <p class="small">後ろ結び</p>
+      <p class="small">ａ</p>
+
+      <p class="small"><br /></p>
+      <p class="small">二〇二三年五月八日　初版発行</p>
+      <p class="small">二〇二四年一〇月二七日　修正版発行</p>
+      <p class="small">発行者　ａ</p>
+      <p class="small">印刷所　vivliostyle</p>
+      <p class="small">Twitter　@a23324094</p>
+      <p class="small">https://www.pixiv.net/users/59321047</p>
+      <p class="small">(C) a 2023</p>
+      <p class="small"><br /></p>
+      <p class="small">本作品は非公式の二次創作作品です。</p>
+      <p class="small">本作品の無断改変および営利目的での複製・転載を禁じます。</p>
+    </div>
+
   </body>
-  </html>
+</html>
