@@ -31,10 +31,10 @@
 <dc:language>ja</dc:language>
 
 <!-- ファイルid -->
-<dc:identifier id="unique-id">urn:uuid:a70e1646-956a-4a5f-8bc1-84d23e9282b1</dc:identifier>
+<dc:identifier id="unique-id">urn:uuid:d4800638-6766-4afa-91c3-6925d2ab45d1</dc:identifier>
 
 <!-- 更新日 -->
-<meta property="dcterms:modified">2024-10-26T03:44:50Z</meta>
+<meta property="dcterms:modified">2024-10-26T19:05:55Z</meta>
 <meta property="dcterms:issued">2024-09-19T15:00:00Z</meta>
 
 <!-- Fixed-Layout Documents指定 -->
