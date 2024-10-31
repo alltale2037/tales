@@ -34,7 +34,7 @@
 <dc:identifier id="unique-id">urn:uuid:9aff1773-ce09-4e22-a32d-cd72b7c64c6e</dc:identifier>
 
 <!-- 更新日 -->
-<meta property="dcterms:modified">2024-10-26T18:09:04Z</meta>
+<meta property="dcterms:modified">2024-10-31T18:18:27Z</meta>
 <meta property="dcterms:issued">2023-01-01T15:00:00Z</meta>
 
 <!-- Fixed-Layout Documents指定 -->
@@ -47,6 +47,9 @@
 <meta property="kadokawa:version">1.1.3</meta>
 <meta property="kadokawa:reflow">1.0.1</meta>
 <meta property="ibooks:specified-fonts">true</meta>
+
+<!-- for iOS Kindle -->
+<meta name="primary-writing-mode" content="horizontal-rl"/>
 
 </metadata>
 <manifest>
