@@ -14,8 +14,8 @@
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 <!-- 作品名 -->
-<dc:title id="title">二次小説</dc:title>
-<meta refines="#title" property="file-as">二次小説</meta>
+<dc:title id="title">０号ちゃんは気づいてしまったようです</dc:title>
+<meta refines="#title" property="file-as">０号ちゃんは気づいてしまったようです</meta>
 
 <!-- 著者名 -->
 <dc:creator id="creator01">ａ</dc:creator>
@@ -31,11 +31,11 @@
 <dc:language>ja</dc:language>
 
 <!-- ファイルid -->
-<dc:identifier id="unique-id">urn:uuid:82961e8a-0711-416c-9e5a-fa334179661c</dc:identifier>
+<dc:identifier id="unique-id">urn:uuid:a0213b50-d033-4489-a7bf-1b2cd5b61024</dc:identifier>
 
 <!-- 更新日 -->
-<meta property="dcterms:modified">2025-05-07T19:38:06Z</meta>
-<meta property="dcterms:issued">2025-01-03T15:00:00Z</meta>
+<meta property="dcterms:modified">2025-05-25T13:55:52Z</meta>
+<meta property="dcterms:issued">2025-05-24T15:00:00Z</meta>
 
 <!-- Fixed-Layout Documents指定 -->
 <meta property="rendition:layout">reflowable</meta>
