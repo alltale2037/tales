@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>（仮題）</title>
+
+    <style>
+    @charset "UTF-8";
+    html {
+      /* 組み方向 */
+      -epub-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      orphans: 1;
+      widows: 1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    @page {
+      size: 105mm 148mm; /* A6 */
+      width: calc(13Q * 1.75 * 16 + 6.5Q);
+      height: calc(13Q * 39);
+      margin-top: 11mm;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      /* 以下、マージンボックスに継承される */
+      font-size: 10Q;
+      font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
+      /* 本来不要（<span class="smaller"><span class="smaller">ルート要素の指定が継承される</span></span>）だが、現時点のvivliostyle.jsの制限により必要 */
+      vertical-align: top;
+    }  
+    @page :left {
+      /*margin-right: 7mm;*/
+      @top-left {
+        content: counter(page) "　　（仮題）";
+        margin-left: 2mm;
+        margin-top: 4mm;
+        writing-mode: horizontal-tb;
+        /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+    }
+    @page :right {
+      /*margin-left: 7mm;*/
+      /* border-bottom: 1pt solid black; */
+      /* 右下ノンブル */
+      @top-right {
+        content: "（仮題）　　"counter(page);
+        margin-right: 2mm;
+        margin-top: 4mm;
+        writing-mode: horizontal-tb;
+        /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+    }
+
+    html {
+      font-family: "A-OTF リュウミン Pr6N L-KL", "FOT-筑紫明朝 Pr6 LB", "FOT-筑紫明朝 Pr6N L", "游明朝", "YuMincho", serif;
+      font-weight: Medium;
+      text-align: justify;
+    }
+
+    body{        
+    }
+
+    div#draft{
+      margin: 5px;
+    }
+
+    h1 {
+      /* フォント */
+      font-weight: Extrabold;
+      /* フォントサイズ */
+      font-size: 16q;
+      /* 字下げ */
+      text-indent: 0;
+      /* 直後の改ページ・改段禁止 */
+      page-break-before: always;
+      page-break-after: always;
+      break-after: page;
+      line-height: 42q;
+      letter-spacing: 0.25em;
+      display: flex;
+      align-items: center;
+      page-break-before: left;
+    }
+
+    h2 {
+      /* フォント */
+      font-weight: Demibold;
+      /* フォントサイズ */
+      font-size: 16q;
+      /* 字下げ */
+      text-indent: 3em;
+      /* 直後の改ページ・改段禁止 */
+      page-break-before: always;
+      page-break-after: avoid;
+      line-height: 42q;
+      margin-left: 2em;
+    }
+
+    h2.part {
+      width: 80mm;
+      padding: 0mm 35mm;
+      font-weight: bold;
+      font-size: 16q;
+      page-break-before: always;
+      page-break-after: always;
+      margin-left: 4em;
+    }
+
+    h1 + h2 {
+      margin-right: 16pt;
+    }
+
+    ruby > rt {
+      font-size: 50%;
+    }
+
+    p {
+      font-size: 13Q;
+      line-height: 1.75;
+      height: calc(13Q * 39);
+      text-indent: 0em;
+      hanging-punctuation: force-end;
+      line-break:strict;
+      page-break-inside: auto;
+    }
+
+    div.indent-1 p:first-of-type, div.indent-2 p:first-of-type, div.indent-3 p:first-of-type{
+      padding-block-start: calc( 3.5mm * 1.75);
+    }
+
+    div.indent-1 p:last-of-type, div.indent-2 p:last-of-type, div.indent-3 p:last-of-type{
+      padding-block-end: calc( 3.5mm * 1.75);
+    }
+  
+    div.indent-1 p{
+      height: calc( 110mm - (100vh * 0.025));
+      padding-top: calc( 3.5mm);
+    }
+
+    div.indent-2 p{
+      height: calc( 110mm - (100vh * 0.025 * 2));
+      padding-top: calc(3.5mm * 2);
+    }
+
+    div.indent-3 p{
+      height: calc( 110mm - (3.5mm * 3));
+      padding-top: calc(3.5mm * 3);
+    }
+
+    p.goth {
+      margin-top: 3em;
+      font-family: "游ゴシック", "YuGothic", san-serif;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+    }
+
+    p.align-rb {
+      text-align: right;
+    }
+
+    p.goth + p.goth {
+      margin-block-start: -1em;
+    }
+
+    div.codes {
+      display: inline-block;
+      margin: 3em 1em;
+      writing-mode: horizontal-tb;
+      padding: 1em;
+      font-family: "Courier", monospace;
+      font-size: 0.8em;
+    }
+  
+    div.codes p {
+      text-orientation: sideways;
+    }
+
+    p.star {
+      text-indent: 3em;
+      margin-right: 16pt;
+      margin-left: 16pt;
+    }
+
+    hr {
+      border: none;
+      border-right: 1pt solid black;
+      height: 6em;
+      margin: auto 8.5pt;
+    }
+
+    /* 縦中横 */
+    .tcy {
+      -webkit-text-combine: horizontal;
+      text-combine: horizontal;
+      -ms-text-combine-horizontal: all;
+      text-combine-horizontal: digit 2;
+      text-combine-upright: digit 2;
+    }
+
+    /* 圏点（<span class="smaller">ゴマ</span>） */
+    em.side-dot, em.sesame_dot {
+      font-style: normal;
+      -webkit-text-emphasis-style: sesame;
+      text-emphasis-style: sesame;
+      margin-right: -1em;
+      display: inline-block;
+    }
+
+    /*著作者*/
+    .author {
+      position: absolute;
+      bottom: 0;
+      font-size: 8.5pt;
+      margin-top: 50pt;
+      letter-spacing: normal;
+    }
+
+    /*画像＋キャプション*/
+    figure {
+      display: block;
+      width: 236pt;
+      -ms-writing-mode: lr-tb;
+      -webkit-writing-mode: horizontal-tb;
+      writing-mode: horizontal-tb;
+      }
+
+    figure img {
+      /*width: 100%;*/
+      height: auto;
+      vertical-align: bottom;
+    }
+
+    figcaption {
+      text-align: left;
+      font-size: 7pt;
+    }
+
+    /*奥付*/
+    /*.colophon {
+      font-size: 7pt;
+      margin-right: 48pt;
+    }*/
+    /* 級さげ */
+    span.smaller{
+      font-size:9Q;
+    }
+  
+    div.comment {
+      display:none;
+    }
+
+    p.blank {
+      color:transparent;
+    }
+    p.small{
+      font-size: 10Q;
+    }
+    .coverpage{
+      position: absolute;
+      width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    .coverpage2{
+      position: absolute;
+      width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    @page :nth(1) {
+      @top-right { content: none }
+      @top-left { content: none }
+    }
+    @page :nth(2) {
+      @top-right { content: none }
+      @top-left { content: none }
+      }
+    h1.title{
+      font-size:100%;
+      font-family: sans-serif-ja, sans-serif;
+      font-weight: normal;
+      text-align: center; 
+    }
+    p.tobiranote{
+      font-size: 10Q;
+      font-family: serif-ja, serif;
+      font-weight: normal;
+      text-align: right; 
+      margin-inline-end: 2.00em;
+    }
+    .epigraph-r {
+      font-size: 10Q;
+      text-align: right;
+      margin-inline-end: 2em;
+    }
+    .epigraph-l {
+      font-size: 10Q;
+      text-align: left;
+      margin-inline-start: 2em;
+    }    
+    .fin {
+      text-align: right;
+      margin-inline-end: 2em;
+    }
+    div.colophon{
+      margin-inline-start: 8em;
+      page-break-before: always;
+    }
+    img, svg { max-inline-size: 100%; max-block-size: 100vb; object-fit: scale-down; }
+
+    </style>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTGR5QC75B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HTGR5QC75B');
+    </script>
+  </head>
+  <body>
+  <!--  <div class="coverpage">-->
+      <h1 class="title">（仮題）</h1>
+  <!--  </div>-->
+  <!--  <div class="coverpage2">-->
+      <p class="tobiranote">本作品は映画『僕が愛したすべての君へ』『君を愛したひとりの僕へ』の二次創作です。</p>
+  <!--  </div>-->
+    <div id="draft">
+      <p id="l-0"></p><p id="l-1"></p><p id="l-2"></p><p id="l-3"></p><p id="l-4">　　　　　（仮題）</p><p id="l-5" class="blank"><br /></p><p id="l-6">　夢を見る。</p><p id="l-7">　琥珀色の世界に、私は囚われている。</p><p id="l-8">　高いビルと四面の歩道橋に囲まれたとても大きな交差点に私は立っている。</p><p id="l-9">　街も人も車も、琥珀色の液体の底に沈んでいるみたいに見える。まるでお父さんのビールグラスの底から世界を見上げてるみたいだ。今が昼なのか夜なのかもわからない。明るかったり暗かったり。なんだか前にもこんな感覚をどこかで味わったような気がする。</p><p id="l-10">　琥珀には何千万年も昔の化石が閉じ込められてるって何かの本で読んだことがある。私も琥珀の中に閉じ込められてしまったのかな。時が止まったまま、誰にも見つけられずに私はここにずっといるのかな。</p><p id="l-11">　そうなのかもしれない。</p><p id="l-12">　でも。</p><p id="l-13">　私はここにいないといけないんだ。この交差点を離れたらダメなんだ。</p><p id="l-14">　だって、約束したから。この交差点で、待ち合わせしようって。</p><p id="l-15">　いつ、その日が来てもいいように、私はずっとここにいるって決めたんだ。</p><p id="l-16">　そしていつか誰かが、私の名前を呼ぶんだ。強く、強く、私の名前を。</p><p id="l-17">　きっとその時ようやく、私の止まっていた時間の矢は前に向かって進み出すんだ。</p><p id="l-18" class="blank"><br /></p><p id="l-19">　──決まってそこで目が覚める。</p><p id="l-20">　夢というものはどこかの並行世界の自分を覗き見ているんじゃないか、なんていう仮説をお母さんに教えてもらったことがあるけど、だとしたら、これもどこかの並行世界の光景なのだろうか。</p><p id="l-21" class="blank"><br /></p><p id="l-22">　　　＊　　　＊　　　＊</p><p id="l-23" class="blank"><br /></p><p id="l-24">　夢を見る。</p><p id="l-25">　俺の全身を、雨が強打している。</p><p id="l-26">　湿度と熱気で息苦しくなるくらいの土砂降りだ。夏の夜の街の喧噪も雨音にかき消され、繁華街の明かりも雨煙に霞んでいる。</p><p id="l-27">　歩行者信号が、点滅を始めたのが見える。</p><p id="l-28">　なのに。</p><p id="l-29">　彼女は交差点の真ん中で立ち止まっている。何かに心奪われたように、横断歩道の先を見つめて微動だにしない。</p><p id="l-30">　俺は知っている。このあとすぐ歩行者信号が、赤に変わる。</p><p id="l-31">　やっとのことで絞り出すように、彼女の名前を俺は叫ぶ。</p><p id="l-32">　なんだか前にもここで泣きながら名前を叫んだことがあるような気がする。</p><p id="l-33">　叫ぶと同時に掌に鋭い痛みが走る。いつの間にか持っていた空き缶を握り潰しているのに気づく。</p><p id="l-34">　でも声は届かない。</p><p id="l-35">　彼女はまだ立ち尽くしている。</p><p id="l-36">　強烈なヘッドライトが俺と彼女を射すくめて、夜が白くなる。一瞬、大輪の花のような真っ赤な傘が目の前をゆっくりと舞って。</p><p id="l-37" class="blank"><br /></p><p id="l-38">　──決まってそこで目が覚める。</p><p id="l-39">　夢というものはどこかの並行世界の自分を覗き見ているんじゃないか、なんていう仮説を父さんに教えてもらったことがあるけど、だとしたら、これもどこかの並行世界の光景なのだろうか。</p><p id="l-40" class="blank"><br /></p><p id="l-41">　　　＊　　　＊　　　＊</p><p id="l-42" class="blank"><br /></p><p id="l-43">「（虚質談義）」</p><p id="l-44">「（虚質談義）」</p><p id="l-45">　せっかくの豊後牛サーロインが焦げるのもかまわず、トング片手に大の大人が口角泡を飛ばして議論する間を梅雨明けの風が吹き抜けてゆく。</p><p id="l-46">「やれやれ。あの二人、大学の頃からほんと変わらないなぁ。虚質科学の話になるとまるで周りが見えなくなる」</p><p id="l-47">　苦笑いしながら私のお父さんは焼けたお肉を手際よく各人の皿に取り分け、今度は漬け込みカルビをバーベキューグリルの上に並べていく。お父さん特製の自慢のタレに漬け込んだ今日とっておきの一品だ。</p><p id="l-48">「<ruby>栞<rt>しおり</rt></ruby>ちゃんも大変よねえ。まったく、あの二人のお肉、いいから栞ちゃん食べちゃいなさい」</p><p id="l-49">　そう言いながらどんどん私のお皿にお肉を乗せてくれてるのは、<ruby>暦<rt>こよみ</rt></ruby>くんのお母さんだ。</p><p id="l-50">「えっ、そんな、一人一枚なのに」</p><p id="l-51">「何言ってるの。中学生は育ち盛りなんだからどんどん食べて頂戴」</p><p id="l-52">「ほんとにいいんですか？　えへへ、ありがとうございます！」</p><p id="l-53">「お前さあ、ほんっと食い意地張ってるな。太るぞ」</p><p id="l-54">　タンドリーチキンにかぶりつきながら、暦くんがいつもの茶々を入れてくる。いくら幼なじみとはいえ、年頃の女の子に言っていいことと悪いことがある。ムッとした私は黙って暦くんのジンジャーエールのペットボトルを掴み、めちゃくちゃに振ってやった。</p><p id="l-55">「あっ、馬鹿っ、やめっ」</p><p id="l-56">　蓋を開けて噴き出すジンジャーエールを顔に浴びるか、しばらく飲むのを我慢する羽目になるか。暦くんがどちらを選択しても　</p><p id="l-57">　夏休み最初の日曜日、私の<ruby>今<rt>いま</rt></ruby><ruby>留<rt>どめ</rt></ruby>家と暦くんの<ruby>日<rt>ひ</rt></ruby><ruby>高<rt>だか</rt></ruby>家は合同で<ruby>高<rt>たか</rt></ruby><ruby>尾<rt>お</rt></ruby><ruby>山<rt>やま</rt></ruby>自然公園にバーベキューに来ている。</p><p id="l-58">　私の両親と暦くんのお父さんは大学の同級生で、暦くんのお母さんは別の大学だったけど、私の両親のことは当時から知ってたそうだ。そして私のお母さんと暦くんのお父さんとで研究所を設立して、今では所長と副所長だから、なんだかうらやましいくらいの仲良し四人組だ。</p><p id="l-59">　家族ぐるみでの付き合いを続けるうちに、偶然にも同じ年に子どもが生まれた。だから私と暦くんは生まれたときから何をするにも一緒だった。一緒にいすぎて、もはや家族みたいな感覚だ。私は一人っ子だからわからないけど、きょうだいってこんな感じなのかな。ただ、お互い別の中学に進学してからは、家族で遊びに行くこと自体が何となく子どもっぽい気がして、私も暦くんも家族ぐるみのイベントにはほとんど参加しなくなっていた。それに去年、お母さん達の研究が世界に大々的に認められて以来、両家とも一気に忙しくなってしまったというのもある。だから今日のバーベキューは約一年ぶりの合同行事だった。やっぱりお肉がいっぱい食べられるのはすごく魅力的だったから、私も今回は二つ返事で参加表明した。</p><p id="l-60">　一年ぶりに会った暦くんはすごく背が高くなってて、声も低くなってびっくりした。数年前までは公園で虫取りしたり自転車で街中を探検したり、一緒に遊び回ってたのに、なんだかちょっと、大人の男の人になってしまった気がした。その割にさっきから、口を開けば私のことをからかってばかり。むしろ精神的には小学生に戻ってない<span class='tcy'>!?</span>　大人なのか子どもなのかわからなくて、私はちょっと混乱してしまう。</p><p id="l-61" class="blank"><br /></p><p id="l-62"></p><p id="l-65" class="blank"><br /></p><p id="l-66"></p><p id="l-67">　すごい。頭良さそう。あんな風に人助けができたらかっこいいな。でも暦くんとはちょっと出会って欲しくないかな。だって暦くん、ああいう頭良さそうなしっかりした女の子が好きそうだから。私もしっかりしなきゃ。</p><p id="l-68" class="blank"><br /></p><p id="l-69"></p><p id="l-70">　胸騒ぎがした。さっきまで手から流れ込んでいた可能性の温度が、永遠に消えてしまう気がして。滝のような雨だ。栞の携帯にコールする。出ない。もう一度コールする。出ない。居ても立ってもいられず、マンションの階段を駆け下りて栞の家の方に駆け出す。信号待ちで再度コールする。出た。栞のお父さんだ。</p><p id="l-71">「暦くんか」</p><p id="l-72"></p>
+
+    </div>
+
+    <div class="colophon">
+      <p class="small">（仮題）</p>
+      <p class="small">ａ</p>
+
+      <p class="small"><br /></p>
+      <p class="small">二〇二三年一月二三日　初版発行</p>
+      <p class="small">二〇二五年五月八日　修正版発行</p>
+      <p class="small">発行者　ａ</p>
+      <p class="small">印刷所　vivliostyle</p>
+      <p class="small">Twitter　@a23324094</p>
+      <p class="small">https://www.pixiv.net/users/59321047</p>
+      <p class="small">© a 2023</p>
+      <p class="small"><br /></p>
+      <p class="small">本作品は非公式の二次創作作品です。</p>
+      <p class="small">本作品の無断改変および営利目的での複製・転載を禁じます。</p>
+    </div>
+
+  </body>
+</html>
