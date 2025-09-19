@@ -14,8 +14,8 @@
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 <!-- 作品名 -->
-<dc:title id="title">０号ちゃんは気づいてしまったようです</dc:title>
-<meta refines="#title" property="file-as">０号ちゃんは気づいてしまったようです</meta>
+<dc:title id="title">本は買うだけでいい</dc:title>
+<meta refines="#title" property="file-as">本は買うだけでいい</meta>
 
 <!-- 著者名 -->
 <dc:creator id="creator01">ａ</dc:creator>
@@ -31,11 +31,11 @@
 <dc:language>ja</dc:language>
 
 <!-- ファイルid -->
-<dc:identifier id="unique-id">urn:uuid:a0213b50-d033-4489-a7bf-1b2cd5b61024</dc:identifier>
+<dc:identifier id="unique-id">urn:uuid:f66334ca-8243-4e22-9157-aa66f8c2dddf</dc:identifier>
 
 <!-- 更新日 -->
-<meta property="dcterms:modified">2025-06-09T03:52:10Z</meta>
-<meta property="dcterms:issued">2025-05-24T15:00:00Z</meta>
+<meta property="dcterms:modified">2025-09-19T15:55:39Z</meta>
+<meta property="dcterms:issued">2025-09-19T15:00:00Z</meta>
 
 <!-- Fixed-Layout Documents指定 -->
 <meta property="rendition:layout">reflowable</meta>
