@@ -76,39 +76,145 @@
     text-combine-horizontal: digit 2;
     text-combine-upright: digit 2;
     }
-
-  #toc li {
-  list-style: none;
-
-  ul{
-  padding-left:0;
+    nav {
+    font-size: 13Q;
   }
 
-  a {
-    display: inline-flex;
-    width: 100%;
-    text-decoration: none;
-    color: currentColor;
-    align-items: baseline;
-
-    &::before {
-      margin-left: 0.5em;
-      margin-right: 0.5em;
-      border-bottom: 1px dotted;
-      content: '';
-      order: 1;
-      flex: auto;
-    }
-
-    &::after {
-      text-align: right;
-      content: target-counter(attr(href), page);
-      align-self: flex-end;
-      flex: none;
-      order: 2;
-    }
+  nav ul {
+    list-style: none;
   }
+  nav li a {
+  display: inline-flex;
+  width: 100%;
+  /*text-decoration: none;*/
+  break-inside: avoid;
+  align-items: baseline;
+  /*color:inherit*/
+  }
+  nav li a::before {
+  margin-left: 3px;
+  margin-right: 3px;
+  /*border-bottom: 1px dotted;*/
+  border-left: 1px dotted;
+  content: "";
+  order: 1;
+  flex: auto;
+  }
+  nav li a::after {
+  text-align: center;
+  content: target-counter(attr(href url), page);  
+  align-self: auto;
+  flex: none;
+  order: 2;
+  text-combine-upright: all;
+  margin-inline-start: 2em;
+  font-size: 11Q;
+  }
+  .display-none {
+    display: none;
+  }
+  
 }
+
+/* 扉 */
+body.p-cover{
+  -webkit-writing-mode: horizontal-tb;
+  /* -epub-writing-mode: tb-rl; */
+  writing-mode: horizontal-tb;
+  -webkit-text-orientation: mixed;
+  -epub-writing-mode: horizontal-tb;
+  -epub-text-orientation: mixed;
+  text-orientation: mixed;
+}
+div.tobira {
+  margin-left: auto; 
+  margin-right: auto; 
+  -epub-writing-mode: vertical-rl; 
+  height: 100%;
+}	
+h1.title{
+  font-size:140%;
+  font-family: sans-serif-ja, sans-serif;
+  font-weight: normal;
+  text-align: center; 
+}
+p.tobiranote{
+  font-size:80%;
+  font-family: serif-ja, serif;
+  font-weight: normal;
+  text-align: right; 
+  margin-bottom:  2.00em;
+}
+
+
+
+.coverpage{
+      position: absolute;
+      width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    .coverpage2{
+      position: absolute;
+      width: 105mm;
+      height: 148mm;
+      top: -10mm;
+      right: -7mm;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      break-after: page;
+    }
+    @page :nth(1) {
+      @top-right { content: none }
+      @top-left { content: none }
+    }
+    @page :nth(2) {
+      @top-right { content: none }
+      @top-left { content: none }
+      }
+    h1.title{
+      font-size:100%;
+      font-family: sans-serif-ja, sans-serif;
+      font-weight: normal;
+      text-align: center; 
+    }
+    p.tobiranote{
+      font-size: 10Q;
+      font-family: serif-ja, serif;
+      font-weight: normal;
+      text-align: right; 
+      margin-inline-end: 2.00em;
+    }
+    .epigraph-r {
+      font-size: 10Q;
+      text-align: right;
+      margin-inline-end: 2em;
+    }
+    .epigraph-l {
+      font-size: 10Q;
+      text-align: left;
+      margin-inline-start: 2em;
+    }    
+    .fin {
+      text-align: right;
+      margin-inline-end: 2em;
+    }
+    div.colophon{
+      margin-inline-start: 8em;
+      page-break-before: always;
+    }
+    img, svg { max-inline-size: 100%; max-block-size: 100vb; object-fit: scale-down; }
+
+
+
 </style>
 </head>
 <body>
@@ -129,6 +235,9 @@
       <li><a href="html/center26.html">アルタラセンター<span class='tcy'>26</span>時</a></li>
       <li><a href="html/hailmary.html">ヒア・カムズ・ザ・サン</a></li>
       <li><a href="html/injection.html">ミッドサマーナイト・レコード</a></li>
+      <li><a href="html/ifzero.html">０号ちゃんは気づいてしまったようです</a></li>
+      <li><a href="html/tsun.html">本は買うだけでいい</a></li>
+      <li><a href="html/kino.html">二次小説</a></li>
     </ul>
 </nav>
 </body>
